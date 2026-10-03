@@ -1,0 +1,42 @@
+{
+  "name": "Glow · Classic",
+  "base": "dark",
+  "overrides": {},
+  "glow": {
+    "bg": "#1c1c1c",
+    "fg": "#e6e6e6",
+    "dim": "#999999",
+    "accent": "#d77757",
+    "accent2": "#b1b9f9",
+    "model": {
+      "bg": "#d77757",
+      "fg": "#1c1c1c"
+    },
+    "panels": [
+      "#303030",
+      "#343434",
+      "#383838",
+      "#3c3c3c",
+      "#404040",
+      "#444444",
+      "#484848"
+    ],
+    "panelFg": "#e6e6e6",
+    "ok": "#4eba65",
+    "warn": "#ffc107",
+    "bad": "#ff6b80",
+    "tip": "#b1b9f9",
+    "gradient": [
+      "#d77757",
+      "#af87ff",
+      "#b1b9f9"
+    ],
+    "swatches": [
+      "#d77757",
+      "#b1b9f9",
+      "#4eba65",
+      "#ffc107",
+      "#fd5db1"
+    ]
+  }
+}

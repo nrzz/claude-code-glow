@@ -1,0 +1,2 @@
+# Same line endings on every OS: the generated themes are compared byte for byte in tests and CI.
+* text=auto eol=lf

@@ -1,0 +1,26 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "claude-code-glow",
+  "description": "Color themes for the whole Claude Code interface, a themed status line, and a live HUD with zero-token tips that help you spend fewer tokens.",
+  "owner": {
+    "name": "Naresh Prabu"
+  },
+  "plugins": [
+    {
+      "name": "glow",
+      "description": "15 color themes for the whole Claude Code interface (pick them in /theme), a themed status line with a live context meter, plan limits and zero-token tips, and /glow:setup, /glow:theme and /glow:doctor.",
+      "author": { "name": "Naresh Prabu" },
+      "category": "productivity",
+      "source": "./",
+      "homepage": "https://github.com/nrzz/claude-code-glow"
+    },
+    {
+      "name": "glow-hud",
+      "description": "Early access: a themed bar above the prompt with a live context meter, plan limits, session cost, a token-saving tip and one-key Compact and Theme buttons, plus a /glow theme picker. Terminal and desktop app. Needs Claude Code 2.1.286 or newer.",
+      "author": { "name": "Naresh Prabu" },
+      "category": "productivity",
+      "source": "./hud",
+      "homepage": "https://github.com/nrzz/claude-code-glow#the-hud"
+    }
+  ]
+}

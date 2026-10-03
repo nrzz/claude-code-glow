@@ -1,0 +1,854 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1343" height="1054" viewBox="0 0 1343 1054" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="14">
+<rect width="1343" height="1054" rx="10" fill="#0d1117"/>
+<circle cx="20" cy="18" r="6" fill="#ff5f57"/><circle cx="40" cy="18" r="6" fill="#febc2e"/><circle cx="60" cy="18" r="6" fill="#28c840"/>
+<text x="671.5" y="22" fill="#8b949e" text-anchor="middle">claude-glow theme list</text>
+<rect x="8" y="44" width="1327" height="22" fill="#eff1f5"/>
+<text x="18.0" y="61" fill="#6c6f85" font-weight="bold" xml:space="preserve"> Catppuccin Latte  (light)</text>
+<rect x="8" y="66" width="1327" height="22" fill="#eff1f5"/>
+<text x="26.6" y="83" fill="#8839ef" xml:space="preserve">▐</text>
+<rect x="35.2" y="68" width="26.4" height="20" fill="#8839ef"/>
+<text x="35.2" y="83" fill="#eff1f5" xml:space="preserve"> ◆ </text>
+<rect x="61.0" y="68" width="86.6" height="20" fill="#8839ef"/>
+<text x="61.0" y="83" fill="#eff1f5" font-weight="bold" xml:space="preserve">Sonnet 5.5</text>
+<rect x="147.0" y="68" width="69.4" height="20" fill="#8839ef"/>
+<text x="147.0" y="83" fill="#eff1f5" xml:space="preserve"> · high </text>
+<text x="215.8" y="83" fill="#8839ef" xml:space="preserve">▌</text>
+<text x="233.0" y="83" fill="#dfe1e7" xml:space="preserve">▐</text>
+<rect x="241.6" y="68" width="215.6" height="20" fill="#dfe1e7"/>
+<text x="241.6" y="83" fill="#4c4f69" xml:space="preserve"> ⌂ nrzz/claude-code-glow </text>
+<text x="456.6" y="83" fill="#dfe1e7" xml:space="preserve">▌</text>
+<text x="473.8" y="83" fill="#dbdee4" xml:space="preserve">▐</text>
+<rect x="482.4" y="68" width="60.8" height="20" fill="#dbdee4"/>
+<text x="482.4" y="83" fill="#4c4f69" xml:space="preserve"> ⎇ main</text>
+<rect x="542.6" y="68" width="9.2" height="20" fill="#dbdee4"/>
+<text x="542.6" y="83" fill="#a06615" xml:space="preserve">*</text>
+<rect x="551.2" y="68" width="9.2" height="20" fill="#dbdee4"/>
+<text x="559.8" y="83" fill="#dbdee4" xml:space="preserve">▌</text>
+<text x="577.0" y="83" fill="#d8dae1" xml:space="preserve">▐</text>
+<rect x="585.6" y="68" width="9.2" height="20" fill="#d8dae1"/>
+<rect x="594.2" y="68" width="26.4" height="20" fill="#d8dae1"/>
+<text x="594.2" y="83" fill="#348223" xml:space="preserve">▰▰▰</text>
+<rect x="620.0" y="68" width="60.8" height="20" fill="#d8dae1"/>
+<text x="620.0" y="83" fill="#6c6f85" xml:space="preserve">▱▱▱▱▱▱▱</text>
+<rect x="680.2" y="68" width="35.0" height="20" fill="#d8dae1"/>
+<text x="680.2" y="83" fill="#348223" xml:space="preserve"> 34%</text>
+<rect x="714.6" y="68" width="26.4" height="20" fill="#d8dae1"/>
+<text x="714.6" y="83" fill="#6c6f85" xml:space="preserve"> · </text>
+<rect x="740.4" y="68" width="69.4" height="20" fill="#d8dae1"/>
+<text x="740.4" y="83" fill="#4c4f69" xml:space="preserve">340K/1M </text>
+<text x="809.2" y="83" fill="#d8dae1" xml:space="preserve">▌</text>
+<text x="826.4" y="83" fill="#d5d7df" xml:space="preserve">▐</text>
+<rect x="835.0" y="68" width="60.8" height="20" fill="#d5d7df"/>
+<text x="835.0" y="83" fill="#4c4f69" xml:space="preserve"> $1.84 </text>
+<text x="895.2" y="83" fill="#d5d7df" xml:space="preserve">▌</text>
+<text x="912.4" y="83" fill="#d2d4dc" xml:space="preserve">▐</text>
+<rect x="921.0" y="68" width="60.8" height="20" fill="#d2d4dc"/>
+<text x="921.0" y="83" fill="#4c4f69" xml:space="preserve"> ◷ 42m </text>
+<text x="981.2" y="83" fill="#d2d4dc" xml:space="preserve">▌</text>
+<text x="998.4" y="83" fill="#ced1d9" xml:space="preserve">▐</text>
+<rect x="1007.0" y="68" width="78.0" height="20" fill="#ced1d9"/>
+<text x="1007.0" y="83" fill="#4c4f69" xml:space="preserve"> ◔ 5h 23%</text>
+<rect x="1084.4" y="68" width="26.4" height="20" fill="#ced1d9"/>
+<text x="1084.4" y="83" fill="#6c6f85" xml:space="preserve"> · </text>
+<rect x="1110.2" y="68" width="60.8" height="20" fill="#ced1d9"/>
+<text x="1110.2" y="83" fill="#4c4f69" xml:space="preserve">7d 41% </text>
+<text x="1170.4" y="83" fill="#ced1d9" xml:space="preserve">▌</text>
+<rect x="8" y="88" width="1327" height="22" fill="#eff1f5"/>
+<text x="26.6" y="105" fill="#187889" xml:space="preserve">💡 Prompt cache cools in 3m — reply soon or hand over; a cold restart re-writes all 340K tokens</text>
+<rect x="8" y="110" width="1327" height="22" fill="#1e1e2e"/>
+<text x="18.0" y="127" fill="#9399b2" font-weight="bold" xml:space="preserve"> Catppuccin Mocha  </text>
+<rect x="8" y="132" width="1327" height="22" fill="#1e1e2e"/>
+<text x="26.6" y="149" fill="#cba6f7" xml:space="preserve">▐</text>
+<rect x="35.2" y="134" width="26.4" height="20" fill="#cba6f7"/>
+<text x="35.2" y="149" fill="#1e1e2e" xml:space="preserve"> ◆ </text>
+<rect x="61.0" y="134" width="86.6" height="20" fill="#cba6f7"/>
+<text x="61.0" y="149" fill="#1e1e2e" font-weight="bold" xml:space="preserve">Sonnet 5.5</text>
+<rect x="147.0" y="134" width="69.4" height="20" fill="#cba6f7"/>
+<text x="147.0" y="149" fill="#1e1e2e" xml:space="preserve"> · high </text>
+<text x="215.8" y="149" fill="#cba6f7" xml:space="preserve">▌</text>
+<text x="233.0" y="149" fill="#303042" xml:space="preserve">▐</text>
+<rect x="241.6" y="134" width="215.6" height="20" fill="#303042"/>
+<text x="241.6" y="149" fill="#cdd6f4" xml:space="preserve"> ⌂ nrzz/claude-code-glow </text>
+<text x="456.6" y="149" fill="#303042" xml:space="preserve">▌</text>
+<text x="473.8" y="149" fill="#333446" xml:space="preserve">▐</text>
+<rect x="482.4" y="134" width="60.8" height="20" fill="#333446"/>
+<text x="482.4" y="149" fill="#cdd6f4" xml:space="preserve"> ⎇ main</text>
+<rect x="542.6" y="134" width="9.2" height="20" fill="#333446"/>
+<text x="542.6" y="149" fill="#f9e2af" xml:space="preserve">*</text>
+<rect x="551.2" y="134" width="9.2" height="20" fill="#333446"/>
+<text x="559.8" y="149" fill="#333446" xml:space="preserve">▌</text>
+<text x="577.0" y="149" fill="#37384a" xml:space="preserve">▐</text>
+<rect x="585.6" y="134" width="9.2" height="20" fill="#37384a"/>
+<rect x="594.2" y="134" width="52.2" height="20" fill="#37384a"/>
+<text x="594.2" y="149" fill="#f9e2af" xml:space="preserve">▰▰▰▰▰▰</text>
+<rect x="645.8" y="134" width="35.0" height="20" fill="#37384a"/>
+<text x="645.8" y="149" fill="#9399b2" xml:space="preserve">▱▱▱▱</text>
+<rect x="680.2" y="134" width="35.0" height="20" fill="#37384a"/>
+<text x="680.2" y="149" fill="#f9e2af" xml:space="preserve"> 62%</text>
+<rect x="714.6" y="134" width="26.4" height="20" fill="#37384a"/>
+<text x="714.6" y="149" fill="#9399b2" xml:space="preserve"> · </text>
+<rect x="740.4" y="134" width="69.4" height="20" fill="#37384a"/>
+<text x="740.4" y="149" fill="#cdd6f4" xml:space="preserve">620K/1M </text>
+<text x="809.2" y="149" fill="#37384a" xml:space="preserve">▌</text>
+<text x="826.4" y="149" fill="#3a3b4e" xml:space="preserve">▐</text>
+<rect x="835.0" y="134" width="60.8" height="20" fill="#3a3b4e"/>
+<text x="835.0" y="149" fill="#cdd6f4" xml:space="preserve"> $1.84 </text>
+<text x="895.2" y="149" fill="#3a3b4e" xml:space="preserve">▌</text>
+<text x="912.4" y="149" fill="#3e3f52" xml:space="preserve">▐</text>
+<rect x="921.0" y="134" width="60.8" height="20" fill="#3e3f52"/>
+<text x="921.0" y="149" fill="#cdd6f4" xml:space="preserve"> ◷ 42m </text>
+<text x="981.2" y="149" fill="#3e3f52" xml:space="preserve">▌</text>
+<text x="998.4" y="149" fill="#414356" xml:space="preserve">▐</text>
+<rect x="1007.0" y="134" width="78.0" height="20" fill="#414356"/>
+<text x="1007.0" y="149" fill="#cdd6f4" xml:space="preserve"> ◔ 5h 23%</text>
+<rect x="1084.4" y="134" width="26.4" height="20" fill="#414356"/>
+<text x="1084.4" y="149" fill="#9399b2" xml:space="preserve"> · </text>
+<rect x="1110.2" y="134" width="60.8" height="20" fill="#414356"/>
+<text x="1110.2" y="149" fill="#cdd6f4" xml:space="preserve">7d 41% </text>
+<text x="1170.4" y="149" fill="#414356" xml:space="preserve">▌</text>
+<text x="1187.6" y="149" fill="#45465a" xml:space="preserve">▐</text>
+<rect x="1196.2" y="134" width="112.4" height="20" fill="#45465a"/>
+<text x="1196.2" y="149" fill="#cdd6f4" xml:space="preserve"> ↻ cache 91% </text>
+<text x="1308.0" y="149" fill="#45465a" xml:space="preserve">▌</text>
+<rect x="8" y="154" width="1327" height="22" fill="#1e1e2e"/>
+<text x="26.6" y="171" fill="#74c7ec" xml:space="preserve">💡 Context 62% — finish this step, then /compact or start a new session</text>
+<rect x="8" y="176" width="1327" height="22" fill="#1c1c1c"/>
+<text x="18.0" y="193" fill="#999999" font-weight="bold" xml:space="preserve"> Classic  </text>
+<rect x="8" y="198" width="1327" height="22" fill="#1c1c1c"/>
+<text x="26.6" y="215" fill="#d77757" xml:space="preserve">▐</text>
+<rect x="35.2" y="200" width="26.4" height="20" fill="#d77757"/>
+<text x="35.2" y="215" fill="#1c1c1c" xml:space="preserve"> ◆ </text>
+<rect x="61.0" y="200" width="86.6" height="20" fill="#d77757"/>
+<text x="61.0" y="215" fill="#1c1c1c" font-weight="bold" xml:space="preserve">Sonnet 5.5</text>
+<rect x="147.0" y="200" width="69.4" height="20" fill="#d77757"/>
+<text x="147.0" y="215" fill="#1c1c1c" xml:space="preserve"> · high </text>
+<text x="215.8" y="215" fill="#d77757" xml:space="preserve">▌</text>
+<text x="233.0" y="215" fill="#303030" xml:space="preserve">▐</text>
+<rect x="241.6" y="200" width="215.6" height="20" fill="#303030"/>
+<text x="241.6" y="215" fill="#e6e6e6" xml:space="preserve"> ⌂ nrzz/claude-code-glow </text>
+<text x="456.6" y="215" fill="#303030" xml:space="preserve">▌</text>
+<text x="473.8" y="215" fill="#343434" xml:space="preserve">▐</text>
+<rect x="482.4" y="200" width="60.8" height="20" fill="#343434"/>
+<text x="482.4" y="215" fill="#e6e6e6" xml:space="preserve"> ⎇ main</text>
+<rect x="542.6" y="200" width="9.2" height="20" fill="#343434"/>
+<text x="542.6" y="215" fill="#ffc107" xml:space="preserve">*</text>
+<rect x="551.2" y="200" width="9.2" height="20" fill="#343434"/>
+<text x="559.8" y="215" fill="#343434" xml:space="preserve">▌</text>
+<text x="577.0" y="215" fill="#383838" xml:space="preserve">▐</text>
+<rect x="585.6" y="200" width="9.2" height="20" fill="#383838"/>
+<rect x="594.2" y="200" width="26.4" height="20" fill="#383838"/>
+<text x="594.2" y="215" fill="#4eba65" xml:space="preserve">▰▰▰</text>
+<rect x="620.0" y="200" width="60.8" height="20" fill="#383838"/>
+<text x="620.0" y="215" fill="#999999" xml:space="preserve">▱▱▱▱▱▱▱</text>
+<rect x="680.2" y="200" width="35.0" height="20" fill="#383838"/>
+<text x="680.2" y="215" fill="#4eba65" xml:space="preserve"> 34%</text>
+<rect x="714.6" y="200" width="26.4" height="20" fill="#383838"/>
+<text x="714.6" y="215" fill="#999999" xml:space="preserve"> · </text>
+<rect x="740.4" y="200" width="69.4" height="20" fill="#383838"/>
+<text x="740.4" y="215" fill="#e6e6e6" xml:space="preserve">340K/1M </text>
+<text x="809.2" y="215" fill="#383838" xml:space="preserve">▌</text>
+<text x="826.4" y="215" fill="#3c3c3c" xml:space="preserve">▐</text>
+<rect x="835.0" y="200" width="60.8" height="20" fill="#3c3c3c"/>
+<text x="835.0" y="215" fill="#e6e6e6" xml:space="preserve"> $1.84 </text>
+<text x="895.2" y="215" fill="#3c3c3c" xml:space="preserve">▌</text>
+<text x="912.4" y="215" fill="#404040" xml:space="preserve">▐</text>
+<rect x="921.0" y="200" width="60.8" height="20" fill="#404040"/>
+<text x="921.0" y="215" fill="#e6e6e6" xml:space="preserve"> ◷ 42m </text>
+<text x="981.2" y="215" fill="#404040" xml:space="preserve">▌</text>
+<text x="998.4" y="215" fill="#444444" xml:space="preserve">▐</text>
+<rect x="1007.0" y="200" width="52.2" height="20" fill="#444444"/>
+<text x="1007.0" y="215" fill="#e6e6e6" xml:space="preserve"> ◔ 5h </text>
+<rect x="1058.6" y="200" width="26.4" height="20" fill="#444444"/>
+<text x="1058.6" y="215" fill="#ffc107" xml:space="preserve">84%</text>
+<rect x="1084.4" y="200" width="26.4" height="20" fill="#444444"/>
+<text x="1084.4" y="215" fill="#999999" xml:space="preserve"> · </text>
+<rect x="1110.2" y="200" width="60.8" height="20" fill="#444444"/>
+<text x="1110.2" y="215" fill="#e6e6e6" xml:space="preserve">7d 41% </text>
+<text x="1170.4" y="215" fill="#444444" xml:space="preserve">▌</text>
+<text x="1187.6" y="215" fill="#484848" xml:space="preserve">▐</text>
+<rect x="1196.2" y="200" width="112.4" height="20" fill="#484848"/>
+<text x="1196.2" y="215" fill="#e6e6e6" xml:space="preserve"> ↻ cache 91% </text>
+<text x="1308.0" y="215" fill="#484848" xml:space="preserve">▌</text>
+<rect x="8" y="220" width="1327" height="22" fill="#1c1c1c"/>
+<text x="26.6" y="237" fill="#b1b9f9" xml:space="preserve">💡 5h limit 84% (resets 19:30) — move chores to Sonnet/Haiku</text>
+<rect x="8" y="242" width="1327" height="22" fill="#0b0b1a"/>
+<text x="18.0" y="259" fill="#8b90b8" font-weight="bold" xml:space="preserve"> Cyberpunk  </text>
+<rect x="8" y="264" width="1327" height="22" fill="#0b0b1a"/>
+<text x="26.6" y="281" fill="#fcee0a" xml:space="preserve">▐</text>
+<rect x="35.2" y="266" width="26.4" height="20" fill="#fcee0a"/>
+<text x="35.2" y="281" fill="#0b0b1a" xml:space="preserve"> ◆ </text>
+<rect x="61.0" y="266" width="86.6" height="20" fill="#fcee0a"/>
+<text x="61.0" y="281" fill="#0b0b1a" font-weight="bold" xml:space="preserve">Sonnet 5.5</text>
+<rect x="147.0" y="266" width="69.4" height="20" fill="#fcee0a"/>
+<text x="147.0" y="281" fill="#0b0b1a" xml:space="preserve"> · high </text>
+<text x="215.8" y="281" fill="#fcee0a" xml:space="preserve">▌</text>
+<text x="233.0" y="281" fill="#212231" xml:space="preserve">▐</text>
+<rect x="241.6" y="266" width="215.6" height="20" fill="#212231"/>
+<text x="241.6" y="281" fill="#e6ecff" xml:space="preserve"> ⌂ nrzz/claude-code-glow </text>
+<text x="456.6" y="281" fill="#212231" xml:space="preserve">▌</text>
+<text x="473.8" y="281" fill="#252635" xml:space="preserve">▐</text>
+<rect x="482.4" y="266" width="60.8" height="20" fill="#252635"/>
+<text x="482.4" y="281" fill="#e6ecff" xml:space="preserve"> ⎇ main</text>
+<rect x="542.6" y="266" width="9.2" height="20" fill="#252635"/>
+<text x="542.6" y="281" fill="#fcee0a" xml:space="preserve">*</text>
+<rect x="551.2" y="266" width="9.2" height="20" fill="#252635"/>
+<text x="559.8" y="281" fill="#252635" xml:space="preserve">▌</text>
+<text x="577.0" y="281" fill="#2a2b3a" xml:space="preserve">▐</text>
+<rect x="585.6" y="266" width="9.2" height="20" fill="#2a2b3a"/>
+<rect x="594.2" y="266" width="78.0" height="20" fill="#2a2b3a"/>
+<text x="594.2" y="281" fill="#ff3262" xml:space="preserve">▰▰▰▰▰▰▰▰▰</text>
+<rect x="671.6" y="266" width="9.2" height="20" fill="#2a2b3a"/>
+<text x="671.6" y="281" fill="#8b90b8" xml:space="preserve">▱</text>
+<rect x="680.2" y="266" width="35.0" height="20" fill="#2a2b3a"/>
+<text x="680.2" y="281" fill="#ff3262" xml:space="preserve"> 86%</text>
+<rect x="714.6" y="266" width="26.4" height="20" fill="#2a2b3a"/>
+<text x="714.6" y="281" fill="#8b90b8" xml:space="preserve"> · </text>
+<rect x="740.4" y="266" width="69.4" height="20" fill="#2a2b3a"/>
+<text x="740.4" y="281" fill="#e6ecff" xml:space="preserve">860K/1M </text>
+<text x="809.2" y="281" fill="#2a2b3a" xml:space="preserve">▌</text>
+<text x="826.4" y="281" fill="#2e2f3f" xml:space="preserve">▐</text>
+<rect x="835.0" y="266" width="60.8" height="20" fill="#2e2f3f"/>
+<text x="835.0" y="281" fill="#e6ecff" xml:space="preserve"> $1.84 </text>
+<text x="895.2" y="281" fill="#2e2f3f" xml:space="preserve">▌</text>
+<text x="912.4" y="281" fill="#323443" xml:space="preserve">▐</text>
+<rect x="921.0" y="266" width="60.8" height="20" fill="#323443"/>
+<text x="921.0" y="281" fill="#e6ecff" xml:space="preserve"> ◷ 42m </text>
+<text x="981.2" y="281" fill="#323443" xml:space="preserve">▌</text>
+<text x="998.4" y="281" fill="#373848" xml:space="preserve">▐</text>
+<rect x="1007.0" y="266" width="78.0" height="20" fill="#373848"/>
+<text x="1007.0" y="281" fill="#e6ecff" xml:space="preserve"> ◔ 5h 23%</text>
+<rect x="1084.4" y="266" width="26.4" height="20" fill="#373848"/>
+<text x="1084.4" y="281" fill="#8b90b8" xml:space="preserve"> · </text>
+<rect x="1110.2" y="266" width="60.8" height="20" fill="#373848"/>
+<text x="1110.2" y="281" fill="#e6ecff" xml:space="preserve">7d 41% </text>
+<text x="1170.4" y="281" fill="#373848" xml:space="preserve">▌</text>
+<text x="1187.6" y="281" fill="#3b3d4c" xml:space="preserve">▐</text>
+<rect x="1196.2" y="266" width="112.4" height="20" fill="#3b3d4c"/>
+<text x="1196.2" y="281" fill="#e6ecff" xml:space="preserve"> ↻ cache 91% </text>
+<text x="1308.0" y="281" fill="#3b3d4c" xml:space="preserve">▌</text>
+<rect x="8" y="286" width="1327" height="22" fill="#0b0b1a"/>
+<text x="26.6" y="303" fill="#00f0ff" xml:space="preserve">💡 Context 86% full — /compact now, or hand over and start fresh</text>
+<rect x="8" y="308" width="1327" height="22" fill="#282a36"/>
+<text x="18.0" y="325" fill="#9da7c6" font-weight="bold" xml:space="preserve"> Dracula  </text>
+<rect x="8" y="330" width="1327" height="22" fill="#282a36"/>
+<text x="26.6" y="347" fill="#bd93f9" xml:space="preserve">▐</text>
+<rect x="35.2" y="332" width="26.4" height="20" fill="#bd93f9"/>
+<text x="35.2" y="347" fill="#282a36" xml:space="preserve"> ◆ </text>
+<rect x="61.0" y="332" width="86.6" height="20" fill="#bd93f9"/>
+<text x="61.0" y="347" fill="#282a36" font-weight="bold" xml:space="preserve">Sonnet 5.5</text>
+<rect x="147.0" y="332" width="69.4" height="20" fill="#bd93f9"/>
+<text x="147.0" y="347" fill="#282a36" xml:space="preserve"> · high </text>
+<text x="215.8" y="347" fill="#bd93f9" xml:space="preserve">▌</text>
+<text x="233.0" y="347" fill="#3d3f49" xml:space="preserve">▐</text>
+<rect x="241.6" y="332" width="215.6" height="20" fill="#3d3f49"/>
+<text x="241.6" y="347" fill="#f8f8f2" xml:space="preserve"> ⌂ nrzz/claude-code-glow </text>
+<text x="456.6" y="347" fill="#3d3f49" xml:space="preserve">▌</text>
+<text x="473.8" y="347" fill="#41434d" xml:space="preserve">▐</text>
+<rect x="482.4" y="332" width="60.8" height="20" fill="#41434d"/>
+<text x="482.4" y="347" fill="#f8f8f2" xml:space="preserve"> ⎇ main</text>
+<rect x="542.6" y="332" width="9.2" height="20" fill="#41434d"/>
+<text x="542.6" y="347" fill="#f1fa8c" xml:space="preserve">*</text>
+<rect x="551.2" y="332" width="9.2" height="20" fill="#41434d"/>
+<text x="559.8" y="347" fill="#41434d" xml:space="preserve">▌</text>
+<text x="577.0" y="347" fill="#454750" xml:space="preserve">▐</text>
+<rect x="585.6" y="332" width="9.2" height="20" fill="#454750"/>
+<rect x="594.2" y="332" width="26.4" height="20" fill="#454750"/>
+<text x="594.2" y="347" fill="#50fa7b" xml:space="preserve">▰▰▰</text>
+<rect x="620.0" y="332" width="60.8" height="20" fill="#454750"/>
+<text x="620.0" y="347" fill="#9da7c6" xml:space="preserve">▱▱▱▱▱▱▱</text>
+<rect x="680.2" y="332" width="35.0" height="20" fill="#454750"/>
+<text x="680.2" y="347" fill="#50fa7b" xml:space="preserve"> 34%</text>
+<rect x="714.6" y="332" width="26.4" height="20" fill="#454750"/>
+<text x="714.6" y="347" fill="#9da7c6" xml:space="preserve"> · </text>
+<rect x="740.4" y="332" width="69.4" height="20" fill="#454750"/>
+<text x="740.4" y="347" fill="#f8f8f2" xml:space="preserve">340K/1M </text>
+<text x="809.2" y="347" fill="#454750" xml:space="preserve">▌</text>
+<text x="826.4" y="347" fill="#494b54" xml:space="preserve">▐</text>
+<rect x="835.0" y="332" width="60.8" height="20" fill="#494b54"/>
+<text x="835.0" y="347" fill="#f8f8f2" xml:space="preserve"> $1.84 </text>
+<text x="895.2" y="347" fill="#494b54" xml:space="preserve">▌</text>
+<text x="912.4" y="347" fill="#4d4f58" xml:space="preserve">▐</text>
+<rect x="921.0" y="332" width="60.8" height="20" fill="#4d4f58"/>
+<text x="921.0" y="347" fill="#f8f8f2" xml:space="preserve"> ◷ 42m </text>
+<text x="981.2" y="347" fill="#4d4f58" xml:space="preserve">▌</text>
+<text x="998.4" y="347" fill="#52535c" xml:space="preserve">▐</text>
+<rect x="1007.0" y="332" width="78.0" height="20" fill="#52535c"/>
+<text x="1007.0" y="347" fill="#f8f8f2" xml:space="preserve"> ◔ 5h 23%</text>
+<rect x="1084.4" y="332" width="26.4" height="20" fill="#52535c"/>
+<text x="1084.4" y="347" fill="#9da7c6" xml:space="preserve"> · </text>
+<rect x="1110.2" y="332" width="60.8" height="20" fill="#52535c"/>
+<text x="1110.2" y="347" fill="#f8f8f2" xml:space="preserve">7d 41% </text>
+<text x="1170.4" y="347" fill="#52535c" xml:space="preserve">▌</text>
+<text x="1187.6" y="347" fill="#56575f" xml:space="preserve">▐</text>
+<rect x="1196.2" y="332" width="112.4" height="20" fill="#56575f"/>
+<text x="1196.2" y="347" fill="#f8f8f2" xml:space="preserve"> ↻ cache 91% </text>
+<text x="1308.0" y="347" fill="#56575f" xml:space="preserve">▌</text>
+<rect x="8" y="352" width="1327" height="22" fill="#282a36"/>
+<text x="26.6" y="369" fill="#8be9fd" xml:space="preserve">💡 --fork-session branches a resumed session instead of continuing it</text>
+<rect x="8" y="374" width="1327" height="22" fill="#ffffff"/>
+<text x="18.0" y="391" fill="#59636e" font-weight="bold" xml:space="preserve"> GitHub Light  (light)</text>
+<rect x="8" y="396" width="1327" height="22" fill="#ffffff"/>
+<text x="26.6" y="413" fill="#0969da" xml:space="preserve">▐</text>
+<rect x="35.2" y="398" width="26.4" height="20" fill="#0969da"/>
+<text x="35.2" y="413" fill="#ffffff" xml:space="preserve"> ◆ </text>
+<rect x="61.0" y="398" width="86.6" height="20" fill="#0969da"/>
+<text x="61.0" y="413" fill="#ffffff" font-weight="bold" xml:space="preserve">Sonnet 5.5</text>
+<rect x="147.0" y="398" width="69.4" height="20" fill="#0969da"/>
+<text x="147.0" y="413" fill="#ffffff" xml:space="preserve"> · high </text>
+<text x="215.8" y="413" fill="#0969da" xml:space="preserve">▌</text>
+<text x="233.0" y="413" fill="#e9e9ea" xml:space="preserve">▐</text>
+<rect x="241.6" y="398" width="215.6" height="20" fill="#e9e9ea"/>
+<text x="241.6" y="413" fill="#1f2328" xml:space="preserve"> ⌂ nrzz/claude-code-glow </text>
+<text x="456.6" y="413" fill="#e9e9ea" xml:space="preserve">▌</text>
+<text x="473.8" y="413" fill="#e4e5e5" xml:space="preserve">▐</text>
+<rect x="482.4" y="398" width="60.8" height="20" fill="#e4e5e5"/>
+<text x="482.4" y="413" fill="#1f2328" xml:space="preserve"> ⎇ main</text>
+<rect x="542.6" y="398" width="9.2" height="20" fill="#e4e5e5"/>
+<text x="542.6" y="413" fill="#9a6700" xml:space="preserve">*</text>
+<rect x="551.2" y="398" width="9.2" height="20" fill="#e4e5e5"/>
+<text x="559.8" y="413" fill="#e4e5e5" xml:space="preserve">▌</text>
+<text x="577.0" y="413" fill="#e0e0e1" xml:space="preserve">▐</text>
+<rect x="585.6" y="398" width="9.2" height="20" fill="#e0e0e1"/>
+<rect x="594.2" y="398" width="26.4" height="20" fill="#e0e0e1"/>
+<text x="594.2" y="413" fill="#1a7f37" xml:space="preserve">▰▰▰</text>
+<rect x="620.0" y="398" width="60.8" height="20" fill="#e0e0e1"/>
+<text x="620.0" y="413" fill="#59636e" xml:space="preserve">▱▱▱▱▱▱▱</text>
+<rect x="680.2" y="398" width="35.0" height="20" fill="#e0e0e1"/>
+<text x="680.2" y="413" fill="#1a7f37" xml:space="preserve"> 34%</text>
+<rect x="714.6" y="398" width="26.4" height="20" fill="#e0e0e1"/>
+<text x="714.6" y="413" fill="#59636e" xml:space="preserve"> · </text>
+<rect x="740.4" y="398" width="69.4" height="20" fill="#e0e0e1"/>
+<text x="740.4" y="413" fill="#1f2328" xml:space="preserve">340K/1M </text>
+<text x="809.2" y="413" fill="#e0e0e1" xml:space="preserve">▌</text>
+<text x="826.4" y="413" fill="#dbdcdd" xml:space="preserve">▐</text>
+<rect x="835.0" y="398" width="60.8" height="20" fill="#dbdcdd"/>
+<text x="835.0" y="413" fill="#1f2328" xml:space="preserve"> $1.84 </text>
+<text x="895.2" y="413" fill="#dbdcdd" xml:space="preserve">▌</text>
+<text x="912.4" y="413" fill="#d7d7d8" xml:space="preserve">▐</text>
+<rect x="921.0" y="398" width="60.8" height="20" fill="#d7d7d8"/>
+<text x="921.0" y="413" fill="#1f2328" xml:space="preserve"> ◷ 42m </text>
+<text x="981.2" y="413" fill="#d7d7d8" xml:space="preserve">▌</text>
+<text x="998.4" y="413" fill="#d2d3d4" xml:space="preserve">▐</text>
+<rect x="1007.0" y="398" width="78.0" height="20" fill="#d2d3d4"/>
+<text x="1007.0" y="413" fill="#1f2328" xml:space="preserve"> ◔ 5h 23%</text>
+<rect x="1084.4" y="398" width="26.4" height="20" fill="#d2d3d4"/>
+<text x="1084.4" y="413" fill="#59636e" xml:space="preserve"> · </text>
+<rect x="1110.2" y="398" width="60.8" height="20" fill="#d2d3d4"/>
+<text x="1110.2" y="413" fill="#1f2328" xml:space="preserve">7d 41% </text>
+<text x="1170.4" y="413" fill="#d2d3d4" xml:space="preserve">▌</text>
+<rect x="8" y="418" width="1327" height="22" fill="#ffffff"/>
+<text x="26.6" y="435" fill="#8250df" xml:space="preserve">💡 /statusline writes a status line from a plain-English description</text>
+<rect x="8" y="440" width="1327" height="22" fill="#282828"/>
+<text x="18.0" y="457" fill="#aa9b86" font-weight="bold" xml:space="preserve"> Gruvbox Dark  </text>
+<rect x="8" y="462" width="1327" height="22" fill="#282828"/>
+<text x="26.6" y="479" fill="#fe8019" xml:space="preserve">▐</text>
+<rect x="35.2" y="464" width="26.4" height="20" fill="#fe8019"/>
+<text x="35.2" y="479" fill="#282828" xml:space="preserve"> ◆ </text>
+<rect x="61.0" y="464" width="86.6" height="20" fill="#fe8019"/>
+<text x="61.0" y="479" fill="#282828" font-weight="bold" xml:space="preserve">Sonnet 5.5</text>
+<rect x="147.0" y="464" width="69.4" height="20" fill="#fe8019"/>
+<text x="147.0" y="479" fill="#282828" xml:space="preserve"> · high </text>
+<text x="215.8" y="479" fill="#fe8019" xml:space="preserve">▌</text>
+<text x="233.0" y="479" fill="#3c3a36" xml:space="preserve">▐</text>
+<rect x="241.6" y="464" width="215.6" height="20" fill="#3c3a36"/>
+<text x="241.6" y="479" fill="#ebdbb2" xml:space="preserve"> ⌂ nrzz/claude-code-glow </text>
+<text x="456.6" y="479" fill="#3c3a36" xml:space="preserve">▌</text>
+<text x="473.8" y="479" fill="#3f3d39" xml:space="preserve">▐</text>
+<rect x="482.4" y="464" width="60.8" height="20" fill="#3f3d39"/>
+<text x="482.4" y="479" fill="#ebdbb2" xml:space="preserve"> ⎇ main</text>
+<rect x="542.6" y="464" width="9.2" height="20" fill="#3f3d39"/>
+<text x="542.6" y="479" fill="#fabd2f" xml:space="preserve">*</text>
+<rect x="551.2" y="464" width="9.2" height="20" fill="#3f3d39"/>
+<text x="559.8" y="479" fill="#3f3d39" xml:space="preserve">▌</text>
+<text x="577.0" y="479" fill="#43413b" xml:space="preserve">▐</text>
+<rect x="585.6" y="464" width="9.2" height="20" fill="#43413b"/>
+<rect x="594.2" y="464" width="52.2" height="20" fill="#43413b"/>
+<text x="594.2" y="479" fill="#fabd2f" xml:space="preserve">▰▰▰▰▰▰</text>
+<rect x="645.8" y="464" width="35.0" height="20" fill="#43413b"/>
+<text x="645.8" y="479" fill="#aa9b86" xml:space="preserve">▱▱▱▱</text>
+<rect x="680.2" y="464" width="35.0" height="20" fill="#43413b"/>
+<text x="680.2" y="479" fill="#fabd2f" xml:space="preserve"> 62%</text>
+<rect x="714.6" y="464" width="26.4" height="20" fill="#43413b"/>
+<text x="714.6" y="479" fill="#aa9b86" xml:space="preserve"> · </text>
+<rect x="740.4" y="464" width="69.4" height="20" fill="#43413b"/>
+<text x="740.4" y="479" fill="#ebdbb2" xml:space="preserve">620K/1M </text>
+<text x="809.2" y="479" fill="#43413b" xml:space="preserve">▌</text>
+<text x="826.4" y="479" fill="#47453e" xml:space="preserve">▐</text>
+<rect x="835.0" y="464" width="60.8" height="20" fill="#47453e"/>
+<text x="835.0" y="479" fill="#ebdbb2" xml:space="preserve"> $1.84 </text>
+<text x="895.2" y="479" fill="#47453e" xml:space="preserve">▌</text>
+<text x="912.4" y="479" fill="#4b4841" xml:space="preserve">▐</text>
+<rect x="921.0" y="464" width="60.8" height="20" fill="#4b4841"/>
+<text x="921.0" y="479" fill="#ebdbb2" xml:space="preserve"> ◷ 42m </text>
+<text x="981.2" y="479" fill="#4b4841" xml:space="preserve">▌</text>
+<text x="998.4" y="479" fill="#4f4c44" xml:space="preserve">▐</text>
+<rect x="1007.0" y="464" width="78.0" height="20" fill="#4f4c44"/>
+<text x="1007.0" y="479" fill="#ebdbb2" xml:space="preserve"> ◔ 5h 23%</text>
+<rect x="1084.4" y="464" width="26.4" height="20" fill="#4f4c44"/>
+<text x="1084.4" y="479" fill="#aa9b86" xml:space="preserve"> · </text>
+<rect x="1110.2" y="464" width="60.8" height="20" fill="#4f4c44"/>
+<text x="1110.2" y="479" fill="#ebdbb2" xml:space="preserve">7d 41% </text>
+<text x="1170.4" y="479" fill="#4f4c44" xml:space="preserve">▌</text>
+<text x="1187.6" y="479" fill="#534f46" xml:space="preserve">▐</text>
+<rect x="1196.2" y="464" width="112.4" height="20" fill="#534f46"/>
+<text x="1196.2" y="479" fill="#ebdbb2" xml:space="preserve"> ↻ cache 91% </text>
+<text x="1308.0" y="479" fill="#534f46" xml:space="preserve">▌</text>
+<rect x="8" y="484" width="1327" height="22" fill="#282828"/>
+<text x="26.6" y="501" fill="#83a598" xml:space="preserve">💡 Context 62% — finish this step, then /compact or start a new session</text>
+<rect x="8" y="506" width="1327" height="22" fill="#0d0208"/>
+<text x="18.0" y="523" fill="#00a82b" font-weight="bold" xml:space="preserve"> Matrix  </text>
+<rect x="8" y="528" width="1327" height="22" fill="#0d0208"/>
+<text x="26.6" y="545" fill="#00ff41" xml:space="preserve">▐</text>
+<rect x="35.2" y="530" width="26.4" height="20" fill="#00ff41"/>
+<text x="35.2" y="545" fill="#0d0208" xml:space="preserve"> ◆ </text>
+<rect x="61.0" y="530" width="86.6" height="20" fill="#00ff41"/>
+<text x="61.0" y="545" fill="#0d0208" font-weight="bold" xml:space="preserve">Sonnet 5.5</text>
+<rect x="147.0" y="530" width="69.4" height="20" fill="#00ff41"/>
+<text x="147.0" y="545" fill="#0d0208" xml:space="preserve"> · high </text>
+<text x="215.8" y="545" fill="#00ff41" xml:space="preserve">▌</text>
+<text x="233.0" y="545" fill="#0c180d" xml:space="preserve">▐</text>
+<rect x="241.6" y="530" width="215.6" height="20" fill="#0c180d"/>
+<text x="241.6" y="545" fill="#00e03c" xml:space="preserve"> ⌂ nrzz/claude-code-glow </text>
+<text x="456.6" y="545" fill="#0c180d" xml:space="preserve">▌</text>
+<text x="473.8" y="545" fill="#0b1d0e" xml:space="preserve">▐</text>
+<rect x="482.4" y="530" width="60.8" height="20" fill="#0b1d0e"/>
+<text x="482.4" y="545" fill="#00e03c" xml:space="preserve"> ⎇ main</text>
+<rect x="542.6" y="530" width="9.2" height="20" fill="#0b1d0e"/>
+<text x="542.6" y="545" fill="#e6ff3a" xml:space="preserve">*</text>
+<rect x="551.2" y="530" width="9.2" height="20" fill="#0b1d0e"/>
+<text x="559.8" y="545" fill="#0b1d0e" xml:space="preserve">▌</text>
+<text x="577.0" y="545" fill="#0b210f" xml:space="preserve">▐</text>
+<rect x="585.6" y="530" width="9.2" height="20" fill="#0b210f"/>
+<rect x="594.2" y="530" width="26.4" height="20" fill="#0b210f"/>
+<text x="594.2" y="545" fill="#39ff14" xml:space="preserve">▰▰▰</text>
+<rect x="620.0" y="530" width="60.8" height="20" fill="#0b210f"/>
+<text x="620.0" y="545" fill="#00a82b" xml:space="preserve">▱▱▱▱▱▱▱</text>
+<rect x="680.2" y="530" width="35.0" height="20" fill="#0b210f"/>
+<text x="680.2" y="545" fill="#39ff14" xml:space="preserve"> 34%</text>
+<rect x="714.6" y="530" width="26.4" height="20" fill="#0b210f"/>
+<text x="714.6" y="545" fill="#00a82b" xml:space="preserve"> · </text>
+<rect x="740.4" y="530" width="69.4" height="20" fill="#0b210f"/>
+<text x="740.4" y="545" fill="#00e03c" xml:space="preserve">340K/1M </text>
+<text x="809.2" y="545" fill="#0b210f" xml:space="preserve">▌</text>
+<text x="826.4" y="545" fill="#0b2610" xml:space="preserve">▐</text>
+<rect x="835.0" y="530" width="60.8" height="20" fill="#0b2610"/>
+<text x="835.0" y="545" fill="#00e03c" xml:space="preserve"> $1.84 </text>
+<text x="895.2" y="545" fill="#0b2610" xml:space="preserve">▌</text>
+<text x="912.4" y="545" fill="#0b2a11" xml:space="preserve">▐</text>
+<rect x="921.0" y="530" width="60.8" height="20" fill="#0b2a11"/>
+<text x="921.0" y="545" fill="#00e03c" xml:space="preserve"> ◷ 42m </text>
+<text x="981.2" y="545" fill="#0b2a11" xml:space="preserve">▌</text>
+<text x="998.4" y="545" fill="#0a2e12" xml:space="preserve">▐</text>
+<rect x="1007.0" y="530" width="52.2" height="20" fill="#0a2e12"/>
+<text x="1007.0" y="545" fill="#00e03c" xml:space="preserve"> ◔ 5h </text>
+<rect x="1058.6" y="530" width="26.4" height="20" fill="#0a2e12"/>
+<text x="1058.6" y="545" fill="#e6ff3a" xml:space="preserve">84%</text>
+<rect x="1084.4" y="530" width="26.4" height="20" fill="#0a2e12"/>
+<text x="1084.4" y="545" fill="#00a82b" xml:space="preserve"> · </text>
+<rect x="1110.2" y="530" width="60.8" height="20" fill="#0a2e12"/>
+<text x="1110.2" y="545" fill="#00e03c" xml:space="preserve">7d 41% </text>
+<text x="1170.4" y="545" fill="#0a2e12" xml:space="preserve">▌</text>
+<text x="1187.6" y="545" fill="#0a3313" xml:space="preserve">▐</text>
+<rect x="1196.2" y="530" width="112.4" height="20" fill="#0a3313"/>
+<text x="1196.2" y="545" fill="#00e03c" xml:space="preserve"> ↻ cache 91% </text>
+<text x="1308.0" y="545" fill="#0a3313" xml:space="preserve">▌</text>
+<rect x="8" y="550" width="1327" height="22" fill="#0d0208"/>
+<text x="26.6" y="567" fill="#00ffa3" xml:space="preserve">💡 5h limit 84% (resets 19:30) — move chores to Sonnet/Haiku</text>
+<rect x="8" y="572" width="1327" height="22" fill="#272822"/>
+<text x="18.0" y="589" fill="#a6a6a1" font-weight="bold" xml:space="preserve"> Monokai  </text>
+<rect x="8" y="594" width="1327" height="22" fill="#272822"/>
+<text x="26.6" y="611" fill="#fd971f" xml:space="preserve">▐</text>
+<rect x="35.2" y="596" width="26.4" height="20" fill="#fd971f"/>
+<text x="35.2" y="611" fill="#272822" xml:space="preserve"> ◆ </text>
+<rect x="61.0" y="596" width="86.6" height="20" fill="#fd971f"/>
+<text x="61.0" y="611" fill="#272822" font-weight="bold" xml:space="preserve">Sonnet 5.5</text>
+<rect x="147.0" y="596" width="69.4" height="20" fill="#fd971f"/>
+<text x="147.0" y="611" fill="#272822" xml:space="preserve"> · high </text>
+<text x="215.8" y="611" fill="#fd971f" xml:space="preserve">▌</text>
+<text x="233.0" y="611" fill="#3c3d37" xml:space="preserve">▐</text>
+<rect x="241.6" y="596" width="215.6" height="20" fill="#3c3d37"/>
+<text x="241.6" y="611" fill="#f8f8f2" xml:space="preserve"> ⌂ nrzz/claude-code-glow </text>
+<text x="456.6" y="611" fill="#3c3d37" xml:space="preserve">▌</text>
+<text x="473.8" y="611" fill="#40413b" xml:space="preserve">▐</text>
+<rect x="482.4" y="596" width="60.8" height="20" fill="#40413b"/>
+<text x="482.4" y="611" fill="#f8f8f2" xml:space="preserve"> ⎇ main</text>
+<rect x="542.6" y="596" width="9.2" height="20" fill="#40413b"/>
+<text x="542.6" y="611" fill="#e6db74" xml:space="preserve">*</text>
+<rect x="551.2" y="596" width="9.2" height="20" fill="#40413b"/>
+<text x="559.8" y="611" fill="#40413b" xml:space="preserve">▌</text>
+<text x="577.0" y="611" fill="#44453f" xml:space="preserve">▐</text>
+<rect x="585.6" y="596" width="9.2" height="20" fill="#44453f"/>
+<rect x="594.2" y="596" width="78.0" height="20" fill="#44453f"/>
+<text x="594.2" y="611" fill="#fb7ba9" xml:space="preserve">▰▰▰▰▰▰▰▰▰</text>
+<rect x="671.6" y="596" width="9.2" height="20" fill="#44453f"/>
+<text x="671.6" y="611" fill="#a6a6a1" xml:space="preserve">▱</text>
+<rect x="680.2" y="596" width="35.0" height="20" fill="#44453f"/>
+<text x="680.2" y="611" fill="#fb7ba9" xml:space="preserve"> 86%</text>
+<rect x="714.6" y="596" width="26.4" height="20" fill="#44453f"/>
+<text x="714.6" y="611" fill="#a6a6a1" xml:space="preserve"> · </text>
+<rect x="740.4" y="596" width="69.4" height="20" fill="#44453f"/>
+<text x="740.4" y="611" fill="#f8f8f2" xml:space="preserve">860K/1M </text>
+<text x="809.2" y="611" fill="#44453f" xml:space="preserve">▌</text>
+<text x="826.4" y="611" fill="#484943" xml:space="preserve">▐</text>
+<rect x="835.0" y="596" width="60.8" height="20" fill="#484943"/>
+<text x="835.0" y="611" fill="#f8f8f2" xml:space="preserve"> $1.84 </text>
+<text x="895.2" y="611" fill="#484943" xml:space="preserve">▌</text>
+<text x="912.4" y="611" fill="#4d4d47" xml:space="preserve">▐</text>
+<rect x="921.0" y="596" width="60.8" height="20" fill="#4d4d47"/>
+<text x="921.0" y="611" fill="#f8f8f2" xml:space="preserve"> ◷ 42m </text>
+<text x="981.2" y="611" fill="#4d4d47" xml:space="preserve">▌</text>
+<text x="998.4" y="611" fill="#51524c" xml:space="preserve">▐</text>
+<rect x="1007.0" y="596" width="78.0" height="20" fill="#51524c"/>
+<text x="1007.0" y="611" fill="#f8f8f2" xml:space="preserve"> ◔ 5h 23%</text>
+<rect x="1084.4" y="596" width="26.4" height="20" fill="#51524c"/>
+<text x="1084.4" y="611" fill="#a6a6a1" xml:space="preserve"> · </text>
+<rect x="1110.2" y="596" width="60.8" height="20" fill="#51524c"/>
+<text x="1110.2" y="611" fill="#f8f8f2" xml:space="preserve">7d 41% </text>
+<text x="1170.4" y="611" fill="#51524c" xml:space="preserve">▌</text>
+<text x="1187.6" y="611" fill="#555650" xml:space="preserve">▐</text>
+<rect x="1196.2" y="596" width="112.4" height="20" fill="#555650"/>
+<text x="1196.2" y="611" fill="#f8f8f2" xml:space="preserve"> ↻ cache 91% </text>
+<text x="1308.0" y="611" fill="#555650" xml:space="preserve">▌</text>
+<rect x="8" y="616" width="1327" height="22" fill="#272822"/>
+<text x="26.6" y="633" fill="#66d9ef" xml:space="preserve">💡 Context 86% full — /compact now, or hand over and start fresh</text>
+<rect x="8" y="638" width="1327" height="22" fill="#2e3440"/>
+<text x="18.0" y="655" fill="#a0aabb" font-weight="bold" xml:space="preserve"> Nord  </text>
+<rect x="8" y="660" width="1327" height="22" fill="#2e3440"/>
+<text x="26.6" y="677" fill="#88c0d0" xml:space="preserve">▐</text>
+<rect x="35.2" y="662" width="26.4" height="20" fill="#88c0d0"/>
+<text x="35.2" y="677" fill="#2e3440" xml:space="preserve"> ◆ </text>
+<rect x="61.0" y="662" width="86.6" height="20" fill="#88c0d0"/>
+<text x="61.0" y="677" fill="#2e3440" font-weight="bold" xml:space="preserve">Sonnet 5.5</text>
+<rect x="147.0" y="662" width="69.4" height="20" fill="#88c0d0"/>
+<text x="147.0" y="677" fill="#2e3440" xml:space="preserve"> · high </text>
+<text x="215.8" y="677" fill="#88c0d0" xml:space="preserve">▌</text>
+<text x="233.0" y="677" fill="#3f4551" xml:space="preserve">▐</text>
+<rect x="241.6" y="662" width="215.6" height="20" fill="#3f4551"/>
+<text x="241.6" y="677" fill="#d8dee9" xml:space="preserve"> ⌂ nrzz/claude-code-glow </text>
+<text x="456.6" y="677" fill="#3f4551" xml:space="preserve">▌</text>
+<text x="473.8" y="677" fill="#424854" xml:space="preserve">▐</text>
+<rect x="482.4" y="662" width="60.8" height="20" fill="#424854"/>
+<text x="482.4" y="677" fill="#d8dee9" xml:space="preserve"> ⎇ main</text>
+<rect x="542.6" y="662" width="9.2" height="20" fill="#424854"/>
+<text x="542.6" y="677" fill="#ebcb8b" xml:space="preserve">*</text>
+<rect x="551.2" y="662" width="9.2" height="20" fill="#424854"/>
+<text x="559.8" y="677" fill="#424854" xml:space="preserve">▌</text>
+<text x="577.0" y="677" fill="#464c58" xml:space="preserve">▐</text>
+<rect x="585.6" y="662" width="9.2" height="20" fill="#464c58"/>
+<rect x="594.2" y="662" width="26.4" height="20" fill="#464c58"/>
+<text x="594.2" y="677" fill="#a3be8c" xml:space="preserve">▰▰▰</text>
+<rect x="620.0" y="662" width="60.8" height="20" fill="#464c58"/>
+<text x="620.0" y="677" fill="#a0aabb" xml:space="preserve">▱▱▱▱▱▱▱</text>
+<rect x="680.2" y="662" width="35.0" height="20" fill="#464c58"/>
+<text x="680.2" y="677" fill="#a3be8c" xml:space="preserve"> 34%</text>
+<rect x="714.6" y="662" width="26.4" height="20" fill="#464c58"/>
+<text x="714.6" y="677" fill="#a0aabb" xml:space="preserve"> · </text>
+<rect x="740.4" y="662" width="69.4" height="20" fill="#464c58"/>
+<text x="740.4" y="677" fill="#d8dee9" xml:space="preserve">340K/1M </text>
+<text x="809.2" y="677" fill="#464c58" xml:space="preserve">▌</text>
+<text x="826.4" y="677" fill="#494f5b" xml:space="preserve">▐</text>
+<rect x="835.0" y="662" width="60.8" height="20" fill="#494f5b"/>
+<text x="835.0" y="677" fill="#d8dee9" xml:space="preserve"> $1.84 </text>
+<text x="895.2" y="677" fill="#494f5b" xml:space="preserve">▌</text>
+<text x="912.4" y="677" fill="#4d535e" xml:space="preserve">▐</text>
+<rect x="921.0" y="662" width="60.8" height="20" fill="#4d535e"/>
+<text x="921.0" y="677" fill="#d8dee9" xml:space="preserve"> ◷ 42m </text>
+<text x="981.2" y="677" fill="#4d535e" xml:space="preserve">▌</text>
+<text x="998.4" y="677" fill="#505662" xml:space="preserve">▐</text>
+<rect x="1007.0" y="662" width="78.0" height="20" fill="#505662"/>
+<text x="1007.0" y="677" fill="#d8dee9" xml:space="preserve"> ◔ 5h 23%</text>
+<rect x="1084.4" y="662" width="26.4" height="20" fill="#505662"/>
+<text x="1084.4" y="677" fill="#a0aabb" xml:space="preserve"> · </text>
+<rect x="1110.2" y="662" width="60.8" height="20" fill="#505662"/>
+<text x="1110.2" y="677" fill="#d8dee9" xml:space="preserve">7d 41% </text>
+<text x="1170.4" y="677" fill="#505662" xml:space="preserve">▌</text>
+<text x="1187.6" y="677" fill="#535965" xml:space="preserve">▐</text>
+<rect x="1196.2" y="662" width="112.4" height="20" fill="#535965"/>
+<text x="1196.2" y="677" fill="#d8dee9" xml:space="preserve"> ↻ cache 91% </text>
+<text x="1308.0" y="677" fill="#535965" xml:space="preserve">▌</text>
+<rect x="8" y="682" width="1327" height="22" fill="#2e3440"/>
+<text x="26.6" y="699" fill="#81a1c1" xml:space="preserve">💡 Shift+Tab cycles permission modes (plan mode included)</text>
+<rect x="8" y="704" width="1327" height="22" fill="#282c34"/>
+<text x="18.0" y="721" fill="#8f96a2" font-weight="bold" xml:space="preserve"> One Dark  </text>
+<rect x="8" y="726" width="1327" height="22" fill="#282c34"/>
+<text x="26.6" y="743" fill="#c678dd" xml:space="preserve">▐</text>
+<rect x="35.2" y="728" width="26.4" height="20" fill="#c678dd"/>
+<text x="35.2" y="743" fill="#282c34" xml:space="preserve"> ◆ </text>
+<rect x="61.0" y="728" width="86.6" height="20" fill="#c678dd"/>
+<text x="61.0" y="743" fill="#282c34" font-weight="bold" xml:space="preserve">Sonnet 5.5</text>
+<rect x="147.0" y="728" width="69.4" height="20" fill="#c678dd"/>
+<text x="147.0" y="743" fill="#282c34" xml:space="preserve"> · high </text>
+<text x="215.8" y="743" fill="#c678dd" xml:space="preserve">▌</text>
+<text x="233.0" y="743" fill="#353942" xml:space="preserve">▐</text>
+<rect x="241.6" y="728" width="215.6" height="20" fill="#353942"/>
+<text x="241.6" y="743" fill="#b1b8c4" xml:space="preserve"> ⌂ nrzz/claude-code-glow </text>
+<text x="456.6" y="743" fill="#353942" xml:space="preserve">▌</text>
+<text x="473.8" y="743" fill="#383c45" xml:space="preserve">▐</text>
+<rect x="482.4" y="728" width="60.8" height="20" fill="#383c45"/>
+<text x="482.4" y="743" fill="#b1b8c4" xml:space="preserve"> ⎇ main</text>
+<rect x="542.6" y="728" width="9.2" height="20" fill="#383c45"/>
+<text x="542.6" y="743" fill="#e5c07b" xml:space="preserve">*</text>
+<rect x="551.2" y="728" width="9.2" height="20" fill="#383c45"/>
+<text x="559.8" y="743" fill="#383c45" xml:space="preserve">▌</text>
+<text x="577.0" y="743" fill="#3a3f47" xml:space="preserve">▐</text>
+<rect x="585.6" y="728" width="9.2" height="20" fill="#3a3f47"/>
+<rect x="594.2" y="728" width="26.4" height="20" fill="#3a3f47"/>
+<text x="594.2" y="743" fill="#98c379" xml:space="preserve">▰▰▰</text>
+<rect x="620.0" y="728" width="60.8" height="20" fill="#3a3f47"/>
+<text x="620.0" y="743" fill="#8f96a2" xml:space="preserve">▱▱▱▱▱▱▱</text>
+<rect x="680.2" y="728" width="35.0" height="20" fill="#3a3f47"/>
+<text x="680.2" y="743" fill="#98c379" xml:space="preserve"> 34%</text>
+<rect x="714.6" y="728" width="26.4" height="20" fill="#3a3f47"/>
+<text x="714.6" y="743" fill="#8f96a2" xml:space="preserve"> · </text>
+<rect x="740.4" y="728" width="69.4" height="20" fill="#3a3f47"/>
+<text x="740.4" y="743" fill="#b1b8c4" xml:space="preserve">340K/1M </text>
+<text x="809.2" y="743" fill="#3a3f47" xml:space="preserve">▌</text>
+<text x="826.4" y="743" fill="#3d414a" xml:space="preserve">▐</text>
+<rect x="835.0" y="728" width="60.8" height="20" fill="#3d414a"/>
+<text x="835.0" y="743" fill="#b1b8c4" xml:space="preserve"> $1.84 </text>
+<text x="895.2" y="743" fill="#3d414a" xml:space="preserve">▌</text>
+<text x="912.4" y="743" fill="#40444d" xml:space="preserve">▐</text>
+<rect x="921.0" y="728" width="60.8" height="20" fill="#40444d"/>
+<text x="921.0" y="743" fill="#b1b8c4" xml:space="preserve"> ◷ 42m </text>
+<text x="981.2" y="743" fill="#40444d" xml:space="preserve">▌</text>
+<text x="998.4" y="743" fill="#424750" xml:space="preserve">▐</text>
+<rect x="1007.0" y="728" width="78.0" height="20" fill="#424750"/>
+<text x="1007.0" y="743" fill="#b1b8c4" xml:space="preserve"> ◔ 5h 23%</text>
+<rect x="1084.4" y="728" width="26.4" height="20" fill="#424750"/>
+<text x="1084.4" y="743" fill="#8f96a2" xml:space="preserve"> · </text>
+<rect x="1110.2" y="728" width="60.8" height="20" fill="#424750"/>
+<text x="1110.2" y="743" fill="#b1b8c4" xml:space="preserve">7d 41% </text>
+<text x="1170.4" y="743" fill="#424750" xml:space="preserve">▌</text>
+<rect x="8" y="748" width="1327" height="22" fill="#282c34"/>
+<text x="26.6" y="765" fill="#61afef" xml:space="preserve">💡 /context shows what fills your window</text>
+<rect x="8" y="770" width="1327" height="22" fill="#191724"/>
+<text x="18.0" y="787" fill="#908daa" font-weight="bold" xml:space="preserve"> Rosé Pine  </text>
+<rect x="8" y="792" width="1327" height="22" fill="#191724"/>
+<text x="26.6" y="809" fill="#ebbcba" xml:space="preserve">▐</text>
+<rect x="35.2" y="794" width="26.4" height="20" fill="#ebbcba"/>
+<text x="35.2" y="809" fill="#191724" xml:space="preserve"> ◆ </text>
+<rect x="61.0" y="794" width="86.6" height="20" fill="#ebbcba"/>
+<text x="61.0" y="809" fill="#191724" font-weight="bold" xml:space="preserve">Sonnet 5.5</text>
+<rect x="147.0" y="794" width="69.4" height="20" fill="#ebbcba"/>
+<text x="147.0" y="809" fill="#191724" xml:space="preserve"> · high </text>
+<text x="215.8" y="809" fill="#ebbcba" xml:space="preserve">▌</text>
+<text x="233.0" y="809" fill="#2d2b39" xml:space="preserve">▐</text>
+<rect x="241.6" y="794" width="215.6" height="20" fill="#2d2b39"/>
+<text x="241.6" y="809" fill="#e0def4" xml:space="preserve"> ⌂ nrzz/claude-code-glow </text>
+<text x="456.6" y="809" fill="#2d2b39" xml:space="preserve">▌</text>
+<text x="473.8" y="809" fill="#312f3d" xml:space="preserve">▐</text>
+<rect x="482.4" y="794" width="60.8" height="20" fill="#312f3d"/>
+<text x="482.4" y="809" fill="#e0def4" xml:space="preserve"> ⎇ main</text>
+<rect x="542.6" y="794" width="9.2" height="20" fill="#312f3d"/>
+<text x="542.6" y="809" fill="#f6c177" xml:space="preserve">*</text>
+<rect x="551.2" y="794" width="9.2" height="20" fill="#312f3d"/>
+<text x="559.8" y="809" fill="#312f3d" xml:space="preserve">▌</text>
+<text x="577.0" y="809" fill="#353341" xml:space="preserve">▐</text>
+<rect x="585.6" y="794" width="9.2" height="20" fill="#353341"/>
+<rect x="594.2" y="794" width="52.2" height="20" fill="#353341"/>
+<text x="594.2" y="809" fill="#f6c177" xml:space="preserve">▰▰▰▰▰▰</text>
+<rect x="645.8" y="794" width="35.0" height="20" fill="#353341"/>
+<text x="645.8" y="809" fill="#908daa" xml:space="preserve">▱▱▱▱</text>
+<rect x="680.2" y="794" width="35.0" height="20" fill="#353341"/>
+<text x="680.2" y="809" fill="#f6c177" xml:space="preserve"> 62%</text>
+<rect x="714.6" y="794" width="26.4" height="20" fill="#353341"/>
+<text x="714.6" y="809" fill="#908daa" xml:space="preserve"> · </text>
+<rect x="740.4" y="794" width="69.4" height="20" fill="#353341"/>
+<text x="740.4" y="809" fill="#e0def4" xml:space="preserve">620K/1M </text>
+<text x="809.2" y="809" fill="#353341" xml:space="preserve">▌</text>
+<text x="826.4" y="809" fill="#393745" xml:space="preserve">▐</text>
+<rect x="835.0" y="794" width="60.8" height="20" fill="#393745"/>
+<text x="835.0" y="809" fill="#e0def4" xml:space="preserve"> $1.84 </text>
+<text x="895.2" y="809" fill="#393745" xml:space="preserve">▌</text>
+<text x="912.4" y="809" fill="#3d3b49" xml:space="preserve">▐</text>
+<rect x="921.0" y="794" width="60.8" height="20" fill="#3d3b49"/>
+<text x="921.0" y="809" fill="#e0def4" xml:space="preserve"> ◷ 42m </text>
+<text x="981.2" y="809" fill="#3d3b49" xml:space="preserve">▌</text>
+<text x="998.4" y="809" fill="#413f4e" xml:space="preserve">▐</text>
+<rect x="1007.0" y="794" width="78.0" height="20" fill="#413f4e"/>
+<text x="1007.0" y="809" fill="#e0def4" xml:space="preserve"> ◔ 5h 23%</text>
+<rect x="1084.4" y="794" width="26.4" height="20" fill="#413f4e"/>
+<text x="1084.4" y="809" fill="#908daa" xml:space="preserve"> · </text>
+<rect x="1110.2" y="794" width="60.8" height="20" fill="#413f4e"/>
+<text x="1110.2" y="809" fill="#e0def4" xml:space="preserve">7d 41% </text>
+<text x="1170.4" y="809" fill="#413f4e" xml:space="preserve">▌</text>
+<text x="1187.6" y="809" fill="#454352" xml:space="preserve">▐</text>
+<rect x="1196.2" y="794" width="112.4" height="20" fill="#454352"/>
+<text x="1196.2" y="809" fill="#e0def4" xml:space="preserve"> ↻ cache 91% </text>
+<text x="1308.0" y="809" fill="#454352" xml:space="preserve">▌</text>
+<rect x="8" y="814" width="1327" height="22" fill="#191724"/>
+<text x="26.6" y="831" fill="#9ccfd8" xml:space="preserve">💡 Context 62% — finish this step, then /compact or start a new session</text>
+<rect x="8" y="836" width="1327" height="22" fill="#002b36"/>
+<text x="18.0" y="853" fill="#7b8d94" font-weight="bold" xml:space="preserve"> Solarized Dark  </text>
+<rect x="8" y="858" width="1327" height="22" fill="#002b36"/>
+<text x="26.6" y="875" fill="#cb4b16" xml:space="preserve">▐</text>
+<rect x="35.2" y="860" width="26.4" height="20" fill="#cb4b16"/>
+<text x="35.2" y="875" fill="#000000" xml:space="preserve"> ◆ </text>
+<rect x="61.0" y="860" width="86.6" height="20" fill="#cb4b16"/>
+<text x="61.0" y="875" fill="#000000" font-weight="bold" xml:space="preserve">Sonnet 5.5</text>
+<rect x="147.0" y="860" width="69.4" height="20" fill="#cb4b16"/>
+<text x="147.0" y="875" fill="#000000" xml:space="preserve"> · high </text>
+<text x="215.8" y="875" fill="#cb4b16" xml:space="preserve">▌</text>
+<text x="233.0" y="875" fill="#0f3741" xml:space="preserve">▐</text>
+<rect x="241.6" y="860" width="215.6" height="20" fill="#0f3741"/>
+<text x="241.6" y="875" fill="#a1aeae" xml:space="preserve"> ⌂ nrzz/claude-code-glow </text>
+<text x="456.6" y="875" fill="#0f3741" xml:space="preserve">▌</text>
+<text x="473.8" y="875" fill="#123943" xml:space="preserve">▐</text>
+<rect x="482.4" y="860" width="60.8" height="20" fill="#123943"/>
+<text x="482.4" y="875" fill="#a1aeae" xml:space="preserve"> ⎇ main</text>
+<rect x="542.6" y="860" width="9.2" height="20" fill="#123943"/>
+<text x="542.6" y="875" fill="#b58900" xml:space="preserve">*</text>
+<rect x="551.2" y="860" width="9.2" height="20" fill="#123943"/>
+<text x="559.8" y="875" fill="#123943" xml:space="preserve">▌</text>
+<text x="577.0" y="875" fill="#153c45" xml:space="preserve">▐</text>
+<rect x="585.6" y="860" width="9.2" height="20" fill="#153c45"/>
+<rect x="594.2" y="860" width="26.4" height="20" fill="#153c45"/>
+<text x="594.2" y="875" fill="#859900" xml:space="preserve">▰▰▰</text>
+<rect x="620.0" y="860" width="60.8" height="20" fill="#153c45"/>
+<text x="620.0" y="875" fill="#7b8d94" xml:space="preserve">▱▱▱▱▱▱▱</text>
+<rect x="680.2" y="860" width="35.0" height="20" fill="#153c45"/>
+<text x="680.2" y="875" fill="#859900" xml:space="preserve"> 34%</text>
+<rect x="714.6" y="860" width="26.4" height="20" fill="#153c45"/>
+<text x="714.6" y="875" fill="#7b8d94" xml:space="preserve"> · </text>
+<rect x="740.4" y="860" width="69.4" height="20" fill="#153c45"/>
+<text x="740.4" y="875" fill="#a1aeae" xml:space="preserve">340K/1M </text>
+<text x="809.2" y="875" fill="#153c45" xml:space="preserve">▌</text>
+<text x="826.4" y="875" fill="#183e47" xml:space="preserve">▐</text>
+<rect x="835.0" y="860" width="60.8" height="20" fill="#183e47"/>
+<text x="835.0" y="875" fill="#a1aeae" xml:space="preserve"> $1.84 </text>
+<text x="895.2" y="875" fill="#183e47" xml:space="preserve">▌</text>
+<text x="912.4" y="875" fill="#1a4049" xml:space="preserve">▐</text>
+<rect x="921.0" y="860" width="60.8" height="20" fill="#1a4049"/>
+<text x="921.0" y="875" fill="#a1aeae" xml:space="preserve"> ◷ 42m </text>
+<text x="981.2" y="875" fill="#1a4049" xml:space="preserve">▌</text>
+<text x="998.4" y="875" fill="#1d434b" xml:space="preserve">▐</text>
+<rect x="1007.0" y="860" width="52.2" height="20" fill="#1d434b"/>
+<text x="1007.0" y="875" fill="#a1aeae" xml:space="preserve"> ◔ 5h </text>
+<rect x="1058.6" y="860" width="26.4" height="20" fill="#1d434b"/>
+<text x="1058.6" y="875" fill="#b58900" xml:space="preserve">84%</text>
+<rect x="1084.4" y="860" width="26.4" height="20" fill="#1d434b"/>
+<text x="1084.4" y="875" fill="#7b8d94" xml:space="preserve"> · </text>
+<rect x="1110.2" y="860" width="60.8" height="20" fill="#1d434b"/>
+<text x="1110.2" y="875" fill="#a1aeae" xml:space="preserve">7d 41% </text>
+<text x="1170.4" y="875" fill="#1d434b" xml:space="preserve">▌</text>
+<text x="1187.6" y="875" fill="#20454e" xml:space="preserve">▐</text>
+<rect x="1196.2" y="860" width="112.4" height="20" fill="#20454e"/>
+<text x="1196.2" y="875" fill="#a1aeae" xml:space="preserve"> ↻ cache 91% </text>
+<text x="1308.0" y="875" fill="#20454e" xml:space="preserve">▌</text>
+<rect x="8" y="880" width="1327" height="22" fill="#002b36"/>
+<text x="26.6" y="897" fill="#3694d5" xml:space="preserve">💡 5h limit 84% (resets 19:30) — move chores to Sonnet/Haiku</text>
+<rect x="8" y="902" width="1327" height="22" fill="#262335"/>
+<text x="18.0" y="919" fill="#9ca2ca" font-weight="bold" xml:space="preserve"> Synthwave '84  </text>
+<rect x="8" y="924" width="1327" height="22" fill="#262335"/>
+<text x="26.6" y="941" fill="#ff7edb" xml:space="preserve">▐</text>
+<rect x="35.2" y="926" width="26.4" height="20" fill="#ff7edb"/>
+<text x="35.2" y="941" fill="#262335" xml:space="preserve"> ◆ </text>
+<rect x="61.0" y="926" width="86.6" height="20" fill="#ff7edb"/>
+<text x="61.0" y="941" fill="#262335" font-weight="bold" xml:space="preserve">Sonnet 5.5</text>
+<rect x="147.0" y="926" width="69.4" height="20" fill="#ff7edb"/>
+<text x="147.0" y="941" fill="#262335" xml:space="preserve"> · high </text>
+<text x="215.8" y="941" fill="#ff7edb" xml:space="preserve">▌</text>
+<text x="233.0" y="941" fill="#3c3949" xml:space="preserve">▐</text>
+<rect x="241.6" y="926" width="215.6" height="20" fill="#3c3949"/>
+<text x="241.6" y="941" fill="#ffffff" xml:space="preserve"> ⌂ nrzz/claude-code-glow </text>
+<text x="456.6" y="941" fill="#3c3949" xml:space="preserve">▌</text>
+<text x="473.8" y="941" fill="#403d4d" xml:space="preserve">▐</text>
+<rect x="482.4" y="926" width="60.8" height="20" fill="#403d4d"/>
+<text x="482.4" y="941" fill="#ffffff" xml:space="preserve"> ⎇ main</text>
+<rect x="542.6" y="926" width="9.2" height="20" fill="#403d4d"/>
+<text x="542.6" y="941" fill="#fede5d" xml:space="preserve">*</text>
+<rect x="551.2" y="926" width="9.2" height="20" fill="#403d4d"/>
+<text x="559.8" y="941" fill="#403d4d" xml:space="preserve">▌</text>
+<text x="577.0" y="941" fill="#444251" xml:space="preserve">▐</text>
+<rect x="585.6" y="926" width="9.2" height="20" fill="#444251"/>
+<rect x="594.2" y="926" width="78.0" height="20" fill="#444251"/>
+<text x="594.2" y="941" fill="#fe7c84" xml:space="preserve">▰▰▰▰▰▰▰▰▰</text>
+<rect x="671.6" y="926" width="9.2" height="20" fill="#444251"/>
+<text x="671.6" y="941" fill="#9ca2ca" xml:space="preserve">▱</text>
+<rect x="680.2" y="926" width="35.0" height="20" fill="#444251"/>
+<text x="680.2" y="941" fill="#fe7c84" xml:space="preserve"> 86%</text>
+<rect x="714.6" y="926" width="26.4" height="20" fill="#444251"/>
+<text x="714.6" y="941" fill="#9ca2ca" xml:space="preserve"> · </text>
+<rect x="740.4" y="926" width="69.4" height="20" fill="#444251"/>
+<text x="740.4" y="941" fill="#ffffff" xml:space="preserve">860K/1M </text>
+<text x="809.2" y="941" fill="#444251" xml:space="preserve">▌</text>
+<text x="826.4" y="941" fill="#494655" xml:space="preserve">▐</text>
+<rect x="835.0" y="926" width="60.8" height="20" fill="#494655"/>
+<text x="835.0" y="941" fill="#ffffff" xml:space="preserve"> $1.84 </text>
+<text x="895.2" y="941" fill="#494655" xml:space="preserve">▌</text>
+<text x="912.4" y="941" fill="#4d4b59" xml:space="preserve">▐</text>
+<rect x="921.0" y="926" width="60.8" height="20" fill="#4d4b59"/>
+<text x="921.0" y="941" fill="#ffffff" xml:space="preserve"> ◷ 42m </text>
+<text x="981.2" y="941" fill="#4d4b59" xml:space="preserve">▌</text>
+<text x="998.4" y="941" fill="#514f5d" xml:space="preserve">▐</text>
+<rect x="1007.0" y="926" width="78.0" height="20" fill="#514f5d"/>
+<text x="1007.0" y="941" fill="#ffffff" xml:space="preserve"> ◔ 5h 23%</text>
+<rect x="1084.4" y="926" width="26.4" height="20" fill="#514f5d"/>
+<text x="1084.4" y="941" fill="#9ca2ca" xml:space="preserve"> · </text>
+<rect x="1110.2" y="926" width="60.8" height="20" fill="#514f5d"/>
+<text x="1110.2" y="941" fill="#ffffff" xml:space="preserve">7d 41% </text>
+<text x="1170.4" y="941" fill="#514f5d" xml:space="preserve">▌</text>
+<text x="1187.6" y="941" fill="#565361" xml:space="preserve">▐</text>
+<rect x="1196.2" y="926" width="112.4" height="20" fill="#565361"/>
+<text x="1196.2" y="941" fill="#ffffff" xml:space="preserve"> ↻ cache 91% </text>
+<text x="1308.0" y="941" fill="#565361" xml:space="preserve">▌</text>
+<rect x="8" y="946" width="1327" height="22" fill="#262335"/>
+<text x="26.6" y="963" fill="#36f9f6" xml:space="preserve">💡 Context 86% full — /compact now, or hand over and start fresh</text>
+<rect x="8" y="968" width="1327" height="22" fill="#1a1b26"/>
+<text x="18.0" y="985" fill="#858cae" font-weight="bold" xml:space="preserve"> Tokyo Night  </text>
+<rect x="8" y="990" width="1327" height="22" fill="#1a1b26"/>
+<text x="26.6" y="1007" fill="#bb9af7" xml:space="preserve">▐</text>
+<rect x="35.2" y="992" width="26.4" height="20" fill="#bb9af7"/>
+<text x="35.2" y="1007" fill="#1a1b26" xml:space="preserve"> ◆ </text>
+<rect x="61.0" y="992" width="86.6" height="20" fill="#bb9af7"/>
+<text x="61.0" y="1007" fill="#1a1b26" font-weight="bold" xml:space="preserve">Sonnet 5.5</text>
+<rect x="147.0" y="992" width="69.4" height="20" fill="#bb9af7"/>
+<text x="147.0" y="1007" fill="#1a1b26" xml:space="preserve"> · high </text>
+<text x="215.8" y="1007" fill="#bb9af7" xml:space="preserve">▌</text>
+<text x="233.0" y="1007" fill="#2b2d3b" xml:space="preserve">▐</text>
+<rect x="241.6" y="992" width="215.6" height="20" fill="#2b2d3b"/>
+<text x="241.6" y="1007" fill="#c0caf5" xml:space="preserve"> ⌂ nrzz/claude-code-glow </text>
+<text x="456.6" y="1007" fill="#2b2d3b" xml:space="preserve">▌</text>
+<text x="473.8" y="1007" fill="#2e303f" xml:space="preserve">▐</text>
+<rect x="482.4" y="992" width="60.8" height="20" fill="#2e303f"/>
+<text x="482.4" y="1007" fill="#c0caf5" xml:space="preserve"> ⎇ main</text>
+<rect x="542.6" y="992" width="9.2" height="20" fill="#2e303f"/>
+<text x="542.6" y="1007" fill="#e0af68" xml:space="preserve">*</text>
+<rect x="551.2" y="992" width="9.2" height="20" fill="#2e303f"/>
+<text x="559.8" y="1007" fill="#2e303f" xml:space="preserve">▌</text>
+<text x="577.0" y="1007" fill="#313443" xml:space="preserve">▐</text>
+<rect x="585.6" y="992" width="9.2" height="20" fill="#313443"/>
+<rect x="594.2" y="992" width="26.4" height="20" fill="#313443"/>
+<text x="594.2" y="1007" fill="#9ece6a" xml:space="preserve">▰▰▰</text>
+<rect x="620.0" y="992" width="60.8" height="20" fill="#313443"/>
+<text x="620.0" y="1007" fill="#858cae" xml:space="preserve">▱▱▱▱▱▱▱</text>
+<rect x="680.2" y="992" width="35.0" height="20" fill="#313443"/>
+<text x="680.2" y="1007" fill="#9ece6a" xml:space="preserve"> 34%</text>
+<rect x="714.6" y="992" width="26.4" height="20" fill="#313443"/>
+<text x="714.6" y="1007" fill="#858cae" xml:space="preserve"> · </text>
+<rect x="740.4" y="992" width="69.4" height="20" fill="#313443"/>
+<text x="740.4" y="1007" fill="#c0caf5" xml:space="preserve">340K/1M </text>
+<text x="809.2" y="1007" fill="#313443" xml:space="preserve">▌</text>
+<text x="826.4" y="1007" fill="#353747" xml:space="preserve">▐</text>
+<rect x="835.0" y="992" width="60.8" height="20" fill="#353747"/>
+<text x="835.0" y="1007" fill="#c0caf5" xml:space="preserve"> $1.84 </text>
+<text x="895.2" y="1007" fill="#353747" xml:space="preserve">▌</text>
+<text x="912.4" y="1007" fill="#383b4b" xml:space="preserve">▐</text>
+<rect x="921.0" y="992" width="60.8" height="20" fill="#383b4b"/>
+<text x="921.0" y="1007" fill="#c0caf5" xml:space="preserve"> ◷ 42m </text>
+<text x="981.2" y="1007" fill="#383b4b" xml:space="preserve">▌</text>
+<text x="998.4" y="1007" fill="#3b3e4f" xml:space="preserve">▐</text>
+<rect x="1007.0" y="992" width="78.0" height="20" fill="#3b3e4f"/>
+<text x="1007.0" y="1007" fill="#c0caf5" xml:space="preserve"> ◔ 5h 23%</text>
+<rect x="1084.4" y="992" width="26.4" height="20" fill="#3b3e4f"/>
+<text x="1084.4" y="1007" fill="#858cae" xml:space="preserve"> · </text>
+<rect x="1110.2" y="992" width="60.8" height="20" fill="#3b3e4f"/>
+<text x="1110.2" y="1007" fill="#c0caf5" xml:space="preserve">7d 41% </text>
+<text x="1170.4" y="1007" fill="#3b3e4f" xml:space="preserve">▌</text>
+<text x="1187.6" y="1007" fill="#3f4254" xml:space="preserve">▐</text>
+<rect x="1196.2" y="992" width="112.4" height="20" fill="#3f4254"/>
+<text x="1196.2" y="1007" fill="#c0caf5" xml:space="preserve"> ↻ cache 91% </text>
+<text x="1308.0" y="1007" fill="#3f4254" xml:space="preserve">▌</text>
+<rect x="8" y="1012" width="1327" height="22" fill="#1a1b26"/>
+<text x="26.6" y="1029" fill="#7aa2f7" xml:space="preserve">💡 Subagents keep big outputs out of your main context</text>
+</svg>

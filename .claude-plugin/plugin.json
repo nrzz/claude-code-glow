@@ -1,0 +1,10 @@
+{
+  "name": "glow",
+  "version": "1.0.0",
+  "description": "15 color themes for the whole Claude Code interface (pick them in /theme), a themed status line with a live context meter, plan limits and zero-token tips, and /glow:setup, /glow:theme and /glow:doctor.",
+  "author": { "name": "Naresh Prabu" },
+  "homepage": "https://github.com/nrzz/claude-code-glow",
+  "repository": "https://github.com/nrzz/claude-code-glow",
+  "license": "MIT",
+  "keywords": ["theme", "themes", "statusline", "status-line", "tokens", "cost", "context", "productivity"]
+}
