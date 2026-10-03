@@ -1,6 +1,6 @@
 ---
 name: theme
-description: Switch the Glow theme in one short turn (free instead - /theme, /glow with the HUD, or claude-glow theme).
+description: Switch the Glow theme.
 disable-model-invocation: true
 argument-hint: [theme name]
 allowed-tools: Bash(node *)

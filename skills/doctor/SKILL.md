@@ -1,6 +1,6 @@
 ---
 name: doctor
-description: Audit this setup for token waste, explained in one short turn (free instead - claude-glow doctor in a terminal).
+description: Audit your setup for token waste.
 disable-model-invocation: true
 allowed-tools: Bash(node *)
 ---

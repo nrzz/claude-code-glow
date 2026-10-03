@@ -15,7 +15,7 @@ Almost nothing, by design:
 | Themes for the whole interface | 0 | Colors only |
 | The status line and its tips | 0 | Claude Code draws it under the prompt and never sends it to the model |
 | The HUD: bar, picker, toasts, `/glow` | 0 | Drawn by the plugin; `/glow` leaves nothing in the conversation |
-| Skills in Claude's skill list | 0 | All three are user-only, so Claude Code leaves them out until you type one |
+| Skills in Claude's skill list | 0 | All three are user-only (`disable-model-invocation`), and Claude Code leaves user-only skills out of the list it gives the model. `claude plugin details` still shows an estimate of about 30 tokens for their one-line descriptions |
 | `/glow:theme`, `/glow:setup`, `/glow:doctor` | one short turn each | Free routes: `/theme`, `/glow` (HUD), and `claude-glow ...` in a terminal |
 
 And it helps you spend less: the tips and toasts tell you when the context is filling up, when the prompt cache is about to go cold, when a plan limit is near, and when a big file was read whole.

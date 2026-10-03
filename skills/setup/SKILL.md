@@ -1,6 +1,6 @@
 ---
 name: setup
-description: Install the Glow status line and themes, with a backup of your settings (one short turn).
+description: Install the Glow status line and themes.
 disable-model-invocation: true
 allowed-tools: Bash(node *)
 ---
