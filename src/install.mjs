@@ -19,6 +19,16 @@ import { listThemes, resolveSlug, writeLiveTheme } from "./themes.mjs";
 const consoleIO = { log: (s = "") => console.log(s), error: (s = "") => console.error(s) };
 const forwardSlashes = (p) => p.replace(/\\/g, "/");
 
+// Two spellings of one folder, symbolic links resolved: on macOS /var is a link to /private/var,
+// and Node gives a module's own path with links resolved.
+function samePath(a, b) {
+  try {
+    return fs.realpathSync(a) === fs.realpathSync(b);
+  } catch {
+    return path.resolve(a) === path.resolve(b);
+  }
+}
+
 /** The settings.json "statusLine" value that runs our installed copy. */
 export function statusLineFor(gdir) {
   return { type: "command", command: `node "${forwardSlashes(path.join(gdir, "statusline.mjs"))}"`, padding: 0 };
@@ -117,7 +127,7 @@ export function install(opts = {}, io = consoleIO) {
   };
 
   // 1. our own copy: statusline.mjs, src/, themes/
-  if (path.resolve(ROOT) === path.resolve(gdir)) {
+  if (samePath(ROOT, gdir)) {
     io.log("  - running from the installed copy; not copying files onto themselves");
   } else {
     step(`copy statusline.mjs, bin/, src/ and themes/ into ${gdir}`, `copied statusline.mjs, bin/, src/ and themes/ into ${gdir}`, () => {
