@@ -24,3 +24,19 @@ jobs:
           node scripts/build-themes.mjs
           node scripts/build-hud-data.mjs
           git diff --exit-code -- themes hud/data
+
+  # The HUD's engine tests, inside the newest Claude Code: the plugin commands need no login.
+  hud:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 22
+      - run: npm install -g @anthropic-ai/claude-code
+      - run: claude plugin validate hud
+      - run: claude plugin test hud

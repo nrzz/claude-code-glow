@@ -13,7 +13,13 @@ const HOME = 'C:/Users/test'
 // How a person typing the command in a fullscreen terminal raises it.
 const TYPED = { origin: { kind: 'composer' as const }, presentation: { isFullscreen: true, columns: 120 } }
 
-const norm = (p: string): string => p.replace(/\\/g, '/')
+// A path as the test keys it. On macOS and Linux C:/Users/test is a relative path, which the engine
+// places under the working directory, so cut what it put in front.
+const norm = (p: string): string => {
+  const slashed = p.replace(/\\/g, '/')
+  const at = slashed.indexOf(`/${HOME}/`)
+  return at >= 0 ? slashed.slice(at + 1) : slashed
+}
 
 // Stands in for the engine beneath the plugin: files in memory, the store, the environment, the
 // usage measurements and the toasts.
