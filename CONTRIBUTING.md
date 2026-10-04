@@ -29,7 +29,7 @@ npm test
 | `statusline.mjs`, `src/render.mjs`, `src/tips.mjs` | the status line and its tips |
 | `bin/claude-glow.mjs`, `src/` | the CLI: install, picker, doctor, cheat sheet |
 | `hud/` | the glowbar plugin (the HUD), its data and its engine tests |
-| `skills/`, `.claude-plugin/` | the glow plugin and the marketplace |
+| `skills/`, `.claude-plugin/` | the glowline plugin and the marketplace |
 
 ## House rules
 

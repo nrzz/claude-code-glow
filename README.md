@@ -150,7 +150,7 @@ claude-glow doctor [--project <dir>]
 claude-glow uninstall
 ```
 
-It restores the status line you had before (or removes Glow's if you had none), and removes the Glow theme files and `~/.claude/claude-code-glow/`. Like the install, whenever it changes `settings.json` it first saves a copy as `settings.json.bak-glow-<timestamp>` and writes the file back with 2-space indentation, and it may leave an empty `~/.claude/themes/` folder behind. Nothing else is touched; the status line's small `claude-glow-git-*.json` files in the temp folder are left for the system to clear. Then `/plugin uninstall glow@claude-code-glow` if you used the plugin.
+It restores the status line you had before (or removes Glow's if you had none), and removes the Glow theme files and `~/.claude/claude-code-glow/`. Like the install, whenever it changes `settings.json` it first saves a copy as `settings.json.bak-glow-<timestamp>` and writes the file back with 2-space indentation, and it may leave an empty `~/.claude/themes/` folder behind. Nothing else is touched; the status line's small `claude-glow-git-*.json` files in the temp folder are left for the system to clear. Then `/plugin uninstall glowline@claude-code-glow` (and `glowbar@claude-code-glow`) if you used the plugins.
 
 ## Privacy
 
