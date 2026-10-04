@@ -1,6 +1,6 @@
 # Contributing to Claude Code Glow
 
-Thanks for helping. Claude Code Glow is a CLI and two Claude Code plugins: `glow` (themes, skills) and `glow-hud` (an early-access function-hooks bar), part of the [Claude Code toolkit](https://github.com/nrzz/claude-code-toolkit). The bar for a change is the bar the code already meets: it works on Windows, macOS and Linux, it is tested, and it never wastes anyone's tokens.
+Thanks for helping. Claude Code Glow is a CLI and two Claude Code plugins: `glowline` (themes, the status line and the skills) and `glowbar` (the HUD, an early-access function-hooks bar), part of the [Claude Code toolkit](https://github.com/nrzz/claude-code-toolkit). The bar for a change is the bar the code already meets: it works on Windows, macOS and Linux, it is tested, and it never wastes anyone's tokens.
 
 ## Start here
 
@@ -28,7 +28,7 @@ npm test
 | `src/palettes.mjs`, `src/theme-gen.mjs` | palettes and the theme generator; `npm run build:themes` writes `themes/` |
 | `statusline.mjs`, `src/render.mjs`, `src/tips.mjs` | the status line and its tips |
 | `bin/claude-glow.mjs`, `src/` | the CLI: install, picker, doctor, cheat sheet |
-| `hud/` | the glow-hud plugin, its data and its engine tests |
+| `hud/` | the glowbar plugin (the HUD), its data and its engine tests |
 | `skills/`, `.claude-plugin/` | the glow plugin and the marketplace |
 
 ## House rules

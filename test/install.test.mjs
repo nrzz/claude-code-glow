@@ -294,7 +294,7 @@ test("the installed bin/claude-glow.mjs is a stable command: every subcommand wo
 
     const version = glow("--version");
     assert.equal(version.status, 0, version.out);
-    assert.equal(version.stdout.trim(), "1.0.1", "package.json is copied too, so --version works");
+    assert.equal(version.stdout.trim(), "1.0.2", "package.json is copied too, so --version works");
     assert.match(glow("--help").stdout, /Usage: claude-glow <command>/);
 
     const list = glow("theme", "list");

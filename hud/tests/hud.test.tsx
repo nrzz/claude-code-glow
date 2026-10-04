@@ -54,7 +54,7 @@ function world(on: On, files: Record<string, string> = {}): { fs: Map<string, st
 
 const band = (bodyColumns: number, isWorking = false) =>
   ({
-    plugin: 'glow-hud',
+    plugin: 'glowbar',
     component: 'AbovePrompt',
     props: { hasSurvey: false, isWorking, maxRows: 4, bodyColumns, scroll: { offset: 0, bodyRows: 1 }, view: {} },
   }) as const
@@ -138,7 +138,7 @@ test('the picker lists every theme and a press applies it', async ($, on) => {
   const { fs } = world(on)
   for (const surface of ['terminal', 'desktop'] as const) {
     const ui = await $.ui.mount({
-      plugin: 'glow-hud',
+      plugin: 'glowbar',
       surface,
       component: 'Pane',
       requestId: 'glow-themes',

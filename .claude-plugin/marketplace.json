@@ -7,15 +7,15 @@
   },
   "plugins": [
     {
-      "name": "glow",
-      "description": "A status line with a live context meter, plan limits and zero-token tips in 15 themes, 14 of which also recolor the whole Claude Code interface (pick them in /theme), plus /glow:setup, /glow:theme and /glow:doctor.",
+      "name": "glowline",
+      "description": "A status line with a live context meter, plan limits and zero-token tips in 15 themes, 14 of which also recolor the whole Claude Code interface (pick them in /theme), plus /glowline:setup, /glowline:theme and /glowline:doctor.",
       "author": { "name": "Naresh Prabu" },
       "category": "productivity",
       "source": "./",
       "homepage": "https://github.com/nrzz/claude-code-glow"
     },
     {
-      "name": "glow-hud",
+      "name": "glowbar",
       "description": "Early access: a themed bar above the prompt with a live context meter, plan limits, session cost, a token-saving tip and one-key Compact and Theme buttons, plus a /glow theme picker. Terminal and desktop app. Needs Claude Code 2.1.286 or newer.",
       "author": { "name": "Naresh Prabu" },
       "category": "productivity",

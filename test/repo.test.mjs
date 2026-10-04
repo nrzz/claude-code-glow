@@ -35,7 +35,7 @@ function specifiers(code) {
 
 test("package.json: name, version, module type, bin, engines, license, repository, scripts", () => {
   assert.equal(pkg.name, "claude-code-glow");
-  assert.equal(pkg.version, "1.0.1");
+  assert.equal(pkg.version, "1.0.2");
   assert.equal(pkg.type, "module");
   assert.deepEqual(pkg.bin, { "claude-glow": "bin/claude-glow.mjs" });
   assert.equal(pkg.engines.node, ">=18");
@@ -62,12 +62,22 @@ test("the manifests and the README count the themes as the palettes do: all for 
   const readme = fs.readFileSync(path.join(ROOT, "README.md"), "utf8");
   const claims = {
     ".claude-plugin/plugin.json": readJson(path.join(ROOT, ".claude-plugin", "plugin.json")).description,
-    ".claude-plugin/marketplace.json": marketplace.plugins.find((p) => p.name === "glow").description,
+    ".claude-plugin/marketplace.json": marketplace.plugins.find((p) => p.name === "glowline").description,
     "README.md": readme.split(/\r?\n/).find((l) => /^Make Claude Code look the way you like/.test(l)),
   };
   for (const [where, text] of Object.entries(claims)) {
     assert.ok(text, `${where} has the sentence`);
     assert.match(text, new RegExp(`\\b${all} themes\\b[^.]*\\b${wholeUi} of which\\b`), `${where} says ${all} themes, ${wholeUi} of which recolor the whole interface`);
+  }
+});
+
+test("skills pre-approve only Glow's own command, never any node command", () => {
+  const SCRIPT = "${CLAUDE_PLUGIN_ROOT}/bin/claude-glow.mjs";
+  for (const d of fs.readdirSync(path.join(ROOT, "skills"))) {
+    const text = fs.readFileSync(path.join(ROOT, "skills", d, "SKILL.md"), "utf8");
+    const tools = /^allowed-tools: (.*)$/m.exec(text)[1];
+    assert.equal(tools, `Bash(node "${SCRIPT}" *) Bash(node ${SCRIPT} *)`, `${d}: allowed-tools is ${tools}`);
+    for (const [, cmd] of text.matchAll(/!`([^`]+)`/g)) assert.ok(cmd.startsWith(`node "${SCRIPT}" `), `${d}: ${cmd}`);
   }
 });
 

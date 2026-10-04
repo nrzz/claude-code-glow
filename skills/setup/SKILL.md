@@ -2,7 +2,7 @@
 name: setup
 description: Install the Glow status line and themes.
 disable-model-invocation: true
-allowed-tools: Bash(node *)
+allowed-tools: Bash(node "${CLAUDE_PLUGIN_ROOT}/bin/claude-glow.mjs" *) Bash(node ${CLAUDE_PLUGIN_ROOT}/bin/claude-glow.mjs *)
 ---
 
 !`node "${CLAUDE_PLUGIN_ROOT}/bin/claude-glow.mjs" install`

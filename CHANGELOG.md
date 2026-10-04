@@ -2,6 +2,12 @@
 
 All notable changes to Claude Code Glow are written here. The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and versions follow [Semantic Versioning](https://semver.org/).
 
+## [1.0.2] - 2026-10-04
+
+- Renamed the plugins, because Anthropic's plugin directory already has a plugin called glow: `glow` is now `glowline` and `glow-hud` is `glowbar`. The skills are `/glowline:setup`, `/glowline:theme` and `/glowline:doctor`. If you installed the plugins under the old names, uninstall them and install the new ones; the `claude-glow` command, the HUD's `/glow` picker, the themes and your settings are unchanged.
+- The skills pre-approve only Glow's own command (`node ${CLAUDE_PLUGIN_ROOT}/bin/claude-glow.mjs ...`) instead of any `node` command.
+- An icon for the plugin's listing in Anthropic's plugin directory, the listing's links in `plugin.json`, and a Privacy section in the README.
+
 ## [1.0.1] - 2026-10-04
 
 - Fixed: the token doctor counted user-only skills (`disable-model-invocation: true`) as loaded in every session, so Glow's own three skills showed as about 38 tokens per session. User-only skills now have their own line at 0 tokens, and only the skills Claude may use on its own are counted.
@@ -14,5 +20,6 @@ All notable changes to Claude Code Glow are written here. The format follows [Ke
 - First release: a themed status line with zero-token tips in 15 themes, 14 of which recolor the whole Claude Code interface through a live theme file, an interactive picker, a static token doctor, a cheat sheet, and the glow-hud plugin.
 - Fixed: the installer recognises its installed copy through symbolic links (macOS).
 
+[1.0.2]: https://github.com/nrzz/claude-code-glow/compare/v1.0.1...v1.0.2
 [1.0.1]: https://github.com/nrzz/claude-code-glow/compare/v1.0.0...v1.0.1
 [1.0.0]: https://github.com/nrzz/claude-code-glow/releases/tag/v1.0.0

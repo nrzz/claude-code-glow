@@ -1,4 +1,4 @@
-// Packs the generated themes into hud/data/themes.json for the glow-hud plugin's picker.
+// Packs the generated themes into hud/data/themes.json for the glowbar plugin's picker (the HUD).
 // The HUD is its own plugin, installed on its own, so it carries its own copy of the data.
 // Run after build-themes: node scripts/build-hud-data.mjs
 import fs from "node:fs";

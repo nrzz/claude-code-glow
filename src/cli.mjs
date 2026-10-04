@@ -114,7 +114,7 @@ function themeSet(arg) {
   const themes = listThemes();
   const slugs = themes.map((t) => t.slug);
   // The problem goes to stderr; the names go to stdout, so a caller that only shows stdout
-  // (the /glow:theme skill) can still offer the choices.
+  // (the /glowline:theme skill) can still offer the choices.
   const refuse = (problem) => {
     console.error(problem);
     say(`Themes: ${slugs.join(", ")}`);

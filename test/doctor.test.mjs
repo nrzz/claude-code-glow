@@ -176,7 +176,7 @@ test("audit: skills that are loaded and cost too much get a fix that names the u
 test("doctor: Glow's own skills are all user-only, so the report counts none of them", () => {
   const box = sandbox();
   try {
-    // The three /glow: skills, as a user would find them in ~/.claude/skills.
+    // The three /glowline: skills, as a user would find them in ~/.claude/skills.
     const shipped = fs.readdirSync(path.join(ROOT, "skills")).sort();
     assert.ok(shipped.length >= 3);
     for (const name of shipped) box.write(`skills/${name}/SKILL.md`, fs.readFileSync(path.join(ROOT, "skills", name, "SKILL.md"), "utf8"));

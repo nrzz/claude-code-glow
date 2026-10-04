@@ -52,7 +52,7 @@ test("--version prints the package version", () => {
       assert.equal(r.status, 0);
       assert.equal(r.stdout.trim(), pkg.version);
     }
-    assert.equal(pkg.version, "1.0.1");
+    assert.equal(pkg.version, "1.0.2");
   } finally { box.cleanup(); }
 });
 
@@ -112,7 +112,7 @@ test("theme set: typos get a suggestion and change nothing; ambiguous names list
   } finally { box.cleanup(); }
 });
 
-test("theme set without a usable name: the problem on stderr, the theme names on stdout (the /glow:theme skill shows stdout)", () => {
+test("theme set without a usable name: the problem on stderr, the theme names on stdout (the /glowline:theme skill shows stdout)", () => {
   const box = sandbox();
   try {
     const names = `Themes: ${SLUGS.join(", ")}`;

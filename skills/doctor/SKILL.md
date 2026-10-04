@@ -2,7 +2,7 @@
 name: doctor
 description: Audit your setup for token waste.
 disable-model-invocation: true
-allowed-tools: Bash(node *)
+allowed-tools: Bash(node "${CLAUDE_PLUGIN_ROOT}/bin/claude-glow.mjs" *) Bash(node ${CLAUDE_PLUGIN_ROOT}/bin/claude-glow.mjs *)
 ---
 
 !`node "${CLAUDE_PLUGIN_ROOT}/bin/claude-glow.mjs" doctor --project "${CLAUDE_PROJECT_DIR}"`

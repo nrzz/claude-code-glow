@@ -19,6 +19,6 @@ export type HudTheme = {
 
 declare module 'claude-code' {
   interface PluginState {
-    'glow-hud': { usage: HudUsage | null; hidden: boolean; theme: string }
+    'glowbar': { usage: HudUsage | null; hidden: boolean; theme: string }
   }
 }

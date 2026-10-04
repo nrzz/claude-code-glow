@@ -16,9 +16,9 @@ import type { EngineInterface, Register } from 'claude-code'
 import type { HudTheme, HudUsage } from '../types'
 
 const PANE = 'glow-themes'
-const usage = atom({ plugin: 'glow-hud', key: 'usage' } as const, null)
-const hidden = atom({ plugin: 'glow-hud', key: 'hidden' } as const, false)
-const current = atom({ plugin: 'glow-hud', key: 'theme' } as const, '')
+const usage = atom({ plugin: 'glowbar', key: 'usage' } as const, null)
+const hidden = atom({ plugin: 'glowbar', key: 'hidden' } as const, false)
+const current = atom({ plugin: 'glowbar', key: 'theme' } as const, '')
 const HOTKEYS = '123456789abdefgijklmnopqrsuvwyz'.split('')
 
 const FEATURE_TIPS = [
