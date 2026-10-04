@@ -52,7 +52,7 @@ test("install into an empty config folder", () => {
     assert.deepEqual({ ...live, name: synth.name }, synth, "the live theme is the chosen theme under another name");
 
     // nothing escaped the config folder
-    assert.deepEqual(ls(box.root), ["cfg", "home"]);
+    assert.deepEqual(ls(box.root), ["cfg", "home", "tmp"], "tmp is the temp folder the sandbox gives its child processes");
     assert.deepEqual(ls(box.home), [], "HOME is untouched");
   } finally { box.cleanup(); }
 });

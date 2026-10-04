@@ -16,9 +16,11 @@ export function sandbox() {
   const root = fs.mkdtempSync(path.join(os.tmpdir(), "glow-test-"));
   const cfg = path.join(root, "cfg");
   const home = path.join(root, "home");
+  const tmp = path.join(root, "tmp"); // the child's temp folder, so the status line's git cache goes away with the sandbox
   fs.mkdirSync(cfg);
   fs.mkdirSync(home);
-  const env = { ...process.env, CLAUDE_CONFIG_DIR: cfg, HOME: home, USERPROFILE: home, NO_COLOR: "1" };
+  fs.mkdirSync(tmp);
+  const env = { ...process.env, CLAUDE_CONFIG_DIR: cfg, HOME: home, USERPROFILE: home, TMPDIR: tmp, TMP: tmp, TEMP: tmp, NO_COLOR: "1" };
   for (const k of ["GLOW_COLOR", "FORCE_COLOR", "COLUMNS", "TERM_PROGRAM", "CLAUDE_CODE_SUBAGENT_MODEL"]) delete env[k];
   return {
     root, cfg, home, env,

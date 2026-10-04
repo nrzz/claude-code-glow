@@ -73,6 +73,8 @@ Two lines under the prompt:
 1. Model and effort, folder, git branch, a context meter that turns from green to amber to red, session cost and time, your 5-hour and weekly plan limits, and the prompt cache's hit ratio with a countdown when it is about to go cold.
 2. One tip.
 
+The branch gets a `*` when the folder has uncommitted changes. To keep a big repository fast, the status line runs `git status` at most once every 5 seconds per folder, gives up after 300 ms, and keeps the answer in a tiny file in your system's temp folder (`claude-glow-git-<hash>.json`: when it last checked, and whether there were changes). That is the only file the status line writes.
+
 Icons come in three styles: `unicode` (the default, any font), `nerd` (Powerline arrows and icons, needs a Nerd Font) and `ascii`. Change with `claude-glow icons nerd`.
 
 ### Tips that save tokens
@@ -146,7 +148,7 @@ claude-glow doctor [--project <dir>]
 claude-glow uninstall
 ```
 
-It restores the status line you had before (or removes Glow's if you had none), and removes the Glow theme files and `~/.claude/claude-code-glow/`. Like the install, whenever it changes `settings.json` it first saves a copy as `settings.json.bak-glow-<timestamp>` and writes the file back with 2-space indentation, and it may leave an empty `~/.claude/themes/` folder behind. Nothing else is touched. Then `/plugin uninstall glow@claude-code-glow` if you used the plugin.
+It restores the status line you had before (or removes Glow's if you had none), and removes the Glow theme files and `~/.claude/claude-code-glow/`. Like the install, whenever it changes `settings.json` it first saves a copy as `settings.json.bak-glow-<timestamp>` and writes the file back with 2-space indentation, and it may leave an empty `~/.claude/themes/` folder behind. Nothing else is touched; the status line's small `claude-glow-git-*.json` files in the temp folder are left for the system to clear. Then `/plugin uninstall glow@claude-code-glow` if you used the plugin.
 
 ## What was verified, and how
 
