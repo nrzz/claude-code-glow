@@ -1,6 +1,6 @@
 {
   "name": "glow-hud",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A themed bar above the prompt: live context meter, plan limits, session cost, a token-saving tip, and one-key Compact and Theme buttons, plus a /glow theme picker. Uses Claude Code's early-access function hooks (2.1.286 or newer).",
   "author": { "name": "Naresh Prabu" },
   "homepage": "https://github.com/nrzz/claude-code-glow",

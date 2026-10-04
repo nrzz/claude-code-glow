@@ -2,7 +2,7 @@
 
 [![test](https://github.com/nrzz/claude-code-glow/actions/workflows/test.yml/badge.svg)](https://github.com/nrzz/claude-code-glow/actions/workflows/test.yml) [![license: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE) ![node >= 18](https://img.shields.io/badge/node-%3E%3D18-339933.svg) ![dependencies: none](https://img.shields.io/badge/dependencies-none-brightgreen.svg) [![part of the Claude Code toolkit](https://img.shields.io/badge/Claude%20Code-toolkit-d97757.svg)](https://github.com/nrzz/claude-code-toolkit)
 
-Make Claude Code look the way you like, and spend fewer tokens while you are at it: 15 color themes for the whole interface, a status line that shows what matters and tells you when to compact, and a live bar with one-key buttons. Everything Glow shows stays on your screen. None of it is sent to the model, so its tips cost zero tokens.
+Make Claude Code look the way you like, and spend fewer tokens while you are at it: a status line that shows what matters and tells you when to compact, in 15 themes (14 of which also recolor the whole interface; `classic` keeps Claude's own colors), and a live bar with one-key buttons. Everything the status line, themes and HUD show stays on your screen. None of it is sent to the model, so its tips cost zero tokens.
 
 ![The Glow status line in every theme](docs/themes.svg)
 
@@ -15,7 +15,7 @@ Almost nothing, by design:
 | Themes for the whole interface | 0 | Colors only |
 | The status line and its tips | 0 | Claude Code draws it under the prompt and never sends it to the model |
 | The HUD: bar, picker, toasts, `/glow` | 0 | Drawn by the plugin; `/glow` leaves nothing in the conversation |
-| Skills in Claude's skill list | 0 | All three are user-only (`disable-model-invocation`), and Claude Code leaves user-only skills out of the list it gives the model. `claude plugin details` still shows an estimate of about 30 tokens for their one-line descriptions |
+| Skills in Claude's skill list | 0 | All three are user-only (`disable-model-invocation`), and Claude Code leaves user-only skills out of the list it gives the model. `claude plugin details` still shows about 30 tokens always-on for their one-line descriptions: that is Claude Code's own estimate, for descriptions the model never actually sees |
 | `/glow:theme`, `/glow:setup`, `/glow:doctor` | one short turn each | Free routes: `/theme`, `/glow` (HUD), and `claude-glow ...` in a terminal |
 
 And it helps you spend less: the tips and toasts tell you when the context is filling up, when the prompt cache is about to go cold, when a plan limit is near, and when a big file was read whole.
@@ -40,13 +40,13 @@ Optional, early access: `/plugin install glow-hud@claude-code-glow` adds the liv
 npx -y github:nrzz/claude-code-glow install
 ```
 
-Same result as `/glow:setup`. Your `settings.json` is backed up first, and only its `statusLine` key changes.
+Same result as `/glow:setup`. In your `settings.json` only the `statusLine` key changes, and every other key keeps its value. But whenever the install changes an existing file, it first saves a copy next to it as `settings.json.bak-glow-<timestamp>`, and it writes the file back with 2-space indentation, so a file formatted another way is reflowed.
 
 ## Themes
 
 | Theme | Base | | Theme | Base |
 | --- | --- | --- | --- | --- |
-| `classic` (Claude's own colors) | dark | | `one-dark` | dark |
+| `classic` (Claude's own colors, status line only) | dark | | `one-dark` | dark |
 | `synthwave-84` | dark | | `monokai` | dark |
 | `dracula` | dark | | `matrix` | dark |
 | `tokyo-night` | dark | | `cyberpunk` | dark |
@@ -62,9 +62,9 @@ Switch whenever you like:
 | A terminal | `claude-glow theme` opens a full-screen picker with a live preview (arrows, Enter). `claude-glow theme set nord` switches at once |
 | Claude Code, with the plugin | `/glow:theme dracula` |
 | Claude Code, with the HUD | `/glow`, then press the theme's key, or `/glow tokyo-night` |
-| Claude Code's own picker | `/theme` lists every theme as "Glow · Name" |
+| Claude Code's own picker | `/theme` lists the 14 interface themes as "Glow · Name" (`classic` themes only the status line, so it is not listed) |
 
-How the instant switch works: Claude Code reads custom themes from `~/.claude/themes/` and watches that folder. Glow keeps one file there, `glow.json` ("Glow (live)"), and rewrites it on every switch. Each theme sets all 71 color keys Claude Code has, from the prompt border and Claude's accent to diff backgrounds, plan-mode labels and the spinner shimmer. Light themes want a light terminal background.
+How the instant switch works: Claude Code reads custom themes from `~/.claude/themes/` and watches that folder. The install writes one file there for each of the 14 interface themes, `glow-<slug>.json`, plus the live file `glow.json` ("Glow (live)"), which Glow rewrites on every switch. Each of the 14 sets all 71 color keys Claude Code has, from the prompt border and Claude's accent to diff backgrounds, plan-mode labels and the spinner shimmer. `classic` sets none of them: it keeps Claude's own colors and themes the status line only. Light themes want a light terminal background.
 
 ## The status line
 
@@ -100,7 +100,7 @@ The `glow-hud` plugin draws a bar above the prompt, in the terminal and in the d
 ◆ glow  ▰▰▰▰▰▰▱▱▱▱ 62%  620K/1M  5h 84%  7d 41%  $3.50  💡 Past half the context: finish this step, then compact…  [ Compact ] [ Theme ] ×
 ```
 
-- **c** compacts (offered past 50%), **t** opens the theme picker, **h** hides the bar (`/glow hud` brings it back).
+- **c** compacts (the button shows at 50% and above, while Claude is not working), **t** opens the theme picker, **h** hides the bar (`/glow hud` brings it back).
 - A toast appears once when the context passes 50% and 80%, when a plan limit passes 80%, and when a large file was read whole, with what it costs on every later message.
 - `/glow` opens the picker; `/glow nord` applies a theme straight away.
 - The bar draws with Claude Code's own theme colors, so it follows whatever theme is active.
@@ -113,7 +113,7 @@ It is built on Claude Code's function hooks, an early-access API that may change
 claude-glow doctor
 ```
 
-Or `/glow:doctor` in Claude Code. It reads only configuration files, never your conversations: how many tokens your `CLAUDE.md` files and their imports put into every session, your skills' descriptions, the MCP servers you have configured, and settings such as effort `max` or a missing cheaper model for subagents. Each finding comes with the fix and roughly what it saves per session.
+Or `/glow:doctor` in Claude Code. It reads only configuration files, never your conversations: how many tokens your `CLAUDE.md` files and their imports put into every session; the descriptions of the skills in your user and project `skills` folders (user-only skills show as 0 tokens, because Claude Code leaves them out of the list it gives the model); the MCP server names in the project's `.mcp.json` and in the top level of your user `.claude.json` (servers stored per project inside that file, and servers that plugins bring, are not counted); and settings such as effort `max` or a missing cheaper model for subagents. Each finding comes with the fix. The `CLAUDE.md`, skills and MCP findings also estimate what the fix saves per session; the effort, subagent-model and status-line findings give no figure.
 
 ## Cheat sheet
 
@@ -146,17 +146,17 @@ claude-glow doctor [--project <dir>]
 claude-glow uninstall
 ```
 
-It restores the status line you had before, and removes the Glow theme files and `~/.claude/claude-code-glow/`. Nothing else is touched. Then `/plugin uninstall glow@claude-code-glow` if you used the plugin.
+It restores the status line you had before (or removes Glow's if you had none), and removes the Glow theme files and `~/.claude/claude-code-glow/`. Like the install, whenever it changes `settings.json` it first saves a copy as `settings.json.bak-glow-<timestamp>` and writes the file back with 2-space indentation, and it may leave an empty `~/.claude/themes/` folder behind. Nothing else is touched. Then `/plugin uninstall glow@claude-code-glow` if you used the plugin.
 
 ## What was verified, and how
 
-Checked on 2026-10-03 with Claude Code 2.1.286 on Windows 11, and in CI on Windows, macOS and Linux with Node 20, 22 and 24:
+Checked on 2026-10-03 with Claude Code 2.1.286 on Windows 11, and in CI on Windows, macOS and Linux with Node 20, 22 and 24, and on Linux with Node 18:
 
-- **The theme format comes from Claude Code itself.** Claude Code 2.1.286 loads `~/.claude/themes/*.json` as `{ name, base, overrides }`, keeps an override only for a color key it knows with a value it accepts (`#rrggbb`, `rgb()`, `ansi256()`, `ansi:`), and watches the folder for changes. Every generated color passes that same rule in the tests, every theme keeps its text at a contrast ratio of at least 4.5 against its background, and CI fails when a generated file is out of date.
-- **247 automated tests** (`npm test`): the status line for empty, full and broken input in every icon style and color mode, width limits, every tip rule, install and uninstall round trips in throwaway config folders (other settings kept, a backup written, invalid JSON left alone, a previous status line restored), the picker, the doctor on fixture projects, and the command line.
-- **The HUD** passes `claude plugin validate`, a strict TypeScript check against Claude Code 2.1.286's own declaration of the plugin API, and 9 tests that `claude plugin test hud` runs inside the Claude Code engine on both the terminal and the desktop surface: the bar's meter, limits, cost, tip and buttons, narrow widths, hiding, switching themes from `/glow` and from the picker, the toasts, and the `--no-ui-theme` opt-out. CI runs them on Windows, macOS and Linux inside the newest Claude Code on every push (2.1.289 when this was written). The first such run caught a test that only worked on Windows: its made-up home folder, `C:/Users/test`, is a relative path on macOS and Linux.
-- **The marketplace install.** Both plugins were installed from this repository into a throwaway Claude config with `claude plugin marketplace add` and `claude plugin install`. `claude plugin details` reports about 58 tokens per session for `glow` (its three skill descriptions) and about 0 for `glow-hud`.
-- **The image at the top** is drawn from the status line's real output, one theme per row on its own background.
+- **The theme format comes from Claude Code itself.** Claude Code 2.1.286 loads `~/.claude/themes/*.json` as `{ name, base, overrides }`, keeps an override only for a color key it knows with a value it accepts (`#rrggbb`, `rgb()`, `ansi256()`, `ansi:`), and watches the folder for changes. Every generated color passes that same rule in the tests, every interface theme keeps its text at a contrast ratio of at least 4.5 against its background, and CI fails when a generated file is out of date.
+- **253 automated tests** (`npm test`): the status line for empty, full and broken input in every icon style and color mode, width limits, every tip rule, install and uninstall round trips in throwaway config folders (other settings kept, a backup written, invalid JSON left alone, a previous status line restored), the picker, the doctor on fixture projects, and the command line.
+- **The HUD** passes `claude plugin validate` and 9 tests that `claude plugin test hud` runs inside the Claude Code engine: the bar's meter, limits, cost, tip and buttons, narrow widths, hiding, switching themes from `/glow` and from the picker, the toasts, and the `--no-ui-theme` opt-out. Only the bar test and the picker test run on both the terminal and the desktop surface; the other bar tests run on the terminal, and the command and toast tests use no surface. A strict TypeScript check against Claude Code 2.1.286's own declaration of the plugin API was a one-off check during development: the repo has no script for it, so CI and `npm test` do not repeat it. CI runs the validation and the engine tests on Windows, macOS and Linux inside the newest Claude Code on every push (2.1.289 when this was written). The first such run caught a test that only worked on Windows: its made-up home folder, `C:/Users/test`, is a relative path on macOS and Linux.
+- **The marketplace install.** Both plugins were installed from this repository into a throwaway Claude config with `claude plugin marketplace add` and `claude plugin install`. `claude plugin details` reports about 30 tokens always-on for `glow` (`Always-on: ~32 tok` on 2026-10-04 with Claude Code 2.1.289, installed from this repository, and the same from the toolkit's marketplace with 2.1.286) and about 0 for `glow-hud`. The 30 are its three skill descriptions: Claude Code's own estimate, for descriptions the model never actually sees, because all three skills are user-only.
+- **The image at the top** is drawn from the status line's real output: one block per theme (its name, the status line and its tip) on that theme's own background.
 
 Not verified: the look inside a live Claude Code window with your terminal's font and background, because the build session could not open an interactive Claude Code. `claude-glow theme` previews with the same drawing code in your own terminal before you change anything.
 

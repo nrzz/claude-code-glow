@@ -1,7 +1,9 @@
 // claude-glow doctor: a STATIC token audit. It reads config files only (CLAUDE.md files, skills,
 // .mcp.json, settings.json, and the mcpServers key of .claude.json). It never reads session
 // transcripts and never prints anything from .claude.json except server names.
-// Token counts are estimates: characters / 4.
+// Token counts are estimates: characters / 4. A user-only skill (frontmatter
+// `disable-model-invocation: true`) is left out of the list Claude Code gives the model, so it
+// is reported separately and counts 0 tokens.
 import fs from "node:fs";
 import os from "node:os";
 import path from "node:path";
@@ -86,6 +88,9 @@ function memoryFiles(cfgDir, project, home) {
   return files;
 }
 
+// `disable-model-invocation: true` (also quoted, any case, or followed by a # comment).
+const isUserOnly = (fm) => /^true(?:[ \t]+#.*)?$/i.test(String(fm["disable-model-invocation"] ?? "").trim());
+
 function skillsIn(dir) {
   let entries = [];
   try { entries = fs.readdirSync(dir, { withFileTypes: true }); } catch { return []; }
@@ -97,7 +102,7 @@ function skillsIn(dir) {
     const fm = parseFrontmatter(text);
     const name = fm.name || e.name;
     const description = fm.description || "";
-    out.push({ name, descChars: description.length, tokens: Math.ceil((name.length + description.length + 12) / 4) });
+    out.push({ name, descChars: description.length, tokens: Math.ceil((name.length + description.length + 12) / 4), userOnly: isUserOnly(fm) });
   }
   return out;
 }
@@ -160,18 +165,27 @@ export function audit({ project, cfg = configDir(), home = os.homedir(), env = p
     });
   }
 
-  // Skills
-  const skillTokens = skills.reduce((n, s) => n + s.tokens, 0);
-  const descChars = skills.reduce((n, s) => n + s.descChars, 0);
-  const skillSummary = `${skills.length} skill${skills.length === 1 ? "" : "s"}, descriptions ${fmt(descChars)} chars, about ${fmt(skillTokens)} tokens loaded every session`;
+  // Skills. Only the ones Claude may use on its own are listed to the model every session; a
+  // user-only skill is left out of that list, so it is reported on its own line at 0 tokens.
+  const loadedSkills = skills.filter((s) => !s.userOnly);
+  const userOnlySkills = skills.filter((s) => s.userOnly);
+  const skillTokens = loadedSkills.reduce((n, s) => n + s.tokens, 0);
+  const descChars = loadedSkills.reduce((n, s) => n + s.descChars, 0);
+  const skillSummary = loadedSkills.length
+    ? `${loadedSkills.length} skill${loadedSkills.length === 1 ? "" : "s"}, descriptions ${fmt(descChars)} chars, about ${fmt(skillTokens)} tokens loaded every session`
+    : "0 skills loaded every session, 0 tokens";
+  const userOnlyNames = userOnlySkills.slice(0, 8).map((s) => s.name).join(", ") + (userOnlySkills.length > 8 ? ", ..." : "");
+  const skillDetails = userOnlySkills.length
+    ? [`${userOnlySkills.length} user-only skill${userOnlySkills.length === 1 ? "" : "s"}, 0 tokens until you run ${userOnlySkills.length === 1 ? "it" : "them"}: ${userOnlyNames}`]
+    : [];
   if (!skills.length) {
     checks.push({ level: "ok", title: "Skills", summary: "none found", details: [], saves: 0 });
   } else if (skillTokens <= BUDGET.skillsOk) {
-    checks.push({ level: "ok", title: "Skills", summary: skillSummary, details: [], saves: 0 });
+    checks.push({ level: "ok", title: "Skills", summary: skillSummary, details: skillDetails, saves: 0 });
   } else {
     checks.push({
-      level: "warn", title: "Skills", summary: skillSummary, details: [],
-      fix: "Every skill's name and description is sent each session. Delete or disable the ones you do not use, and cut descriptions to one sentence.",
+      level: "warn", title: "Skills", summary: skillSummary, details: skillDetails,
+      fix: "The name and description of every skill Claude may use on its own is sent each session; user-only skills are not. Add `disable-model-invocation: true` to the ones you only run by hand, delete the ones you do not use, and cut the rest to one sentence.",
       saves: skillTokens - BUDGET.skillsOk,
     });
   }
@@ -225,7 +239,7 @@ export function audit({ project, cfg = configDir(), home = os.homedir(), env = p
   }
 
   const total = checks.reduce((n, c) => n + (typeof c.saves === "number" && c.saves > 0 ? c.saves : 0), 0);
-  return { project: proj, cfg, checks, total, memTokens, skillTokens, serverCount: servers.length };
+  return { project: proj, cfg, checks, total, memTokens, skillTokens, userOnlySkills: userOnlySkills.length, serverCount: servers.length };
 }
 
 /** Print the audit as a short colored report. Returns the audit data. */

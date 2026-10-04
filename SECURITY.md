@@ -10,4 +10,4 @@ Please do not report a vulnerability in a public issue. Use GitHub's private rep
 
 ## What this tool can and cannot protect
 
-The status line runs as a command from your settings; the installer backs settings up and changes only `statusLine`. The HUD uses Claude Code's early-access function-hooks API.
+The status line runs as a command from your settings. The installer changes only the `statusLine` key of `settings.json`, after saving a copy of the file, and writes its own folder `claude-code-glow/` and its theme files in `themes/`; `uninstall` takes them out again. The HUD uses Claude Code's early-access function-hooks API.

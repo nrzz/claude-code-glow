@@ -2,6 +2,7 @@ import test from "node:test";
 import assert from "node:assert/strict";
 import fs from "node:fs";
 import path from "node:path";
+import { PALETTES } from "../src/palettes.mjs";
 import { ROOT, readJson } from "./helpers.mjs";
 
 const pkg = readJson(path.join(ROOT, "package.json"));
@@ -34,7 +35,7 @@ function specifiers(code) {
 
 test("package.json: name, version, module type, bin, engines, license, repository, scripts", () => {
   assert.equal(pkg.name, "claude-code-glow");
-  assert.equal(pkg.version, "1.0.0");
+  assert.equal(pkg.version, "1.0.1");
   assert.equal(pkg.type, "module");
   assert.deepEqual(pkg.bin, { "claude-glow": "bin/claude-glow.mjs" });
   assert.equal(pkg.engines.node, ">=18");
@@ -45,6 +46,29 @@ test("package.json: name, version, module type, bin, engines, license, repositor
   for (const f of ["bin", "src", "themes", "statusline.mjs"]) assert.ok(pkg.files.includes(f), `files lists ${f}`);
   for (const f of pkg.files) assert.ok(!f.startsWith("/") && !f.includes(".."));
   assert.ok(fs.existsSync(path.join(ROOT, pkg.bin["claude-glow"])));
+});
+
+test("both plugin manifests carry the package version", () => {
+  for (const file of [".claude-plugin/plugin.json", "hud/.claude-plugin/plugin.json"]) {
+    assert.equal(readJson(path.join(ROOT, file)).version, pkg.version, `${file} is at the package version`);
+  }
+});
+
+test("the manifests and the README count the themes as the palettes do: all for the status line, all but classic for the whole interface", () => {
+  const all = PALETTES.length;
+  const wholeUi = PALETTES.filter((p) => !p.statuslineOnly).length;
+  assert.equal(wholeUi, all - 1, "only classic is status-line only");
+  const marketplace = readJson(path.join(ROOT, ".claude-plugin", "marketplace.json"));
+  const readme = fs.readFileSync(path.join(ROOT, "README.md"), "utf8");
+  const claims = {
+    ".claude-plugin/plugin.json": readJson(path.join(ROOT, ".claude-plugin", "plugin.json")).description,
+    ".claude-plugin/marketplace.json": marketplace.plugins.find((p) => p.name === "glow").description,
+    "README.md": readme.split(/\r?\n/).find((l) => /^Make Claude Code look the way you like/.test(l)),
+  };
+  for (const [where, text] of Object.entries(claims)) {
+    assert.ok(text, `${where} has the sentence`);
+    assert.match(text, new RegExp(`\\b${all} themes\\b[^.]*\\b${wholeUi} of which\\b`), `${where} says ${all} themes, ${wholeUi} of which recolor the whole interface`);
+  }
 });
 
 test("zero dependencies: no dependency fields, no lockfile, no node_modules, only node: and relative imports", () => {

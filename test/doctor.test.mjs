@@ -7,6 +7,10 @@ import { ROOT, ls, run, sandbox } from "./helpers.mjs";
 
 const pad = (text, chars) => text + "x".repeat(chars - text.length);
 const skill = (name, description) => `---\nname: ${name}\ndescription: ${description}\n---\n\n# ${name}\nbody that is never loaded up front\n`;
+// Claude Code leaves a skill with `disable-model-invocation: true` out of the list it gives the model.
+const userOnly = (name, description, flag = "true") => `---\nname: ${name}\ndescription: ${description}\ndisable-model-invocation: ${flag}\n---\n\n# ${name}\nbody that is never loaded up front\n`;
+const estimate = (name, description) => Math.ceil((name.length + description.length + 12) / 4); // the doctor's rule for one skill, written out again
+const namesAfterColon = (line) => line.trim().split(": ")[1].split(", ").sort();
 
 // A project and a config folder with known sizes, so every number in the report can be checked.
 function fixture(box, { lean = false } = {}) {
@@ -119,6 +123,73 @@ test("audit: counts CLAUDE.md files and their imports, skills, MCP servers and s
     assert.equal(byTitle["Effort level"].saves, null, "not measurable statically, so not counted");
 
     assert.equal(r.total, byTitle["CLAUDE.md memory"].saves + byTitle.Skills.saves + byTitle["MCP servers"].saves);
+  } finally { box.cleanup(); }
+});
+
+test("audit: user-only skills are listed at 0 tokens and left out of the always-loaded count", () => {
+  const box = sandbox();
+  try {
+    const proj = path.join(box.root, "proj");
+    const put = (rel, text) => { const f = path.join(proj, rel); fs.mkdirSync(path.dirname(f), { recursive: true }); fs.writeFileSync(f, text); };
+    // Claude may use these two on its own, so their descriptions are in the list it is given every session.
+    box.write("skills/alpha/SKILL.md", skill("alpha", "Does alpha things."));
+    put(".claude/skills/beta/SKILL.md", userOnly("beta", "B".repeat(300), "false"));
+    // These four are user-only however the flag is written. Counted, their 5,000-character descriptions would blow the budget.
+    box.write("skills/gamma/SKILL.md", userOnly("gamma", "G".repeat(5000)));
+    box.write("skills/delta/SKILL.md", userOnly("delta", "D".repeat(5000), '"true"'));
+    put(".claude/skills/epsilon/SKILL.md", userOnly("epsilon", "E".repeat(5000), "TRUE"));
+    put(".claude/skills/zeta/SKILL.md", userOnly("zeta", "Z".repeat(5000), "true # run by hand"));
+
+    const r = audit({ project: proj, cfg: box.cfg, home: box.home, env: { CLAUDE_CONFIG_DIR: box.cfg } });
+    const skills = r.checks.find((c) => c.title === "Skills");
+    const loaded = estimate("alpha", "Does alpha things.") + estimate("beta", "B".repeat(300));
+    assert.equal(r.skillTokens, loaded, "only alpha and beta (disable-model-invocation: false) are counted");
+    assert.equal(r.userOnlySkills, 4);
+    assert.equal(skills.level, "ok");
+    assert.equal(skills.saves, 0);
+    assert.equal(skills.summary, `2 skills, descriptions 318 chars, about ${loaded} tokens loaded every session`);
+    assert.match(skills.details[0], /^4 user-only skills, 0 tokens until you run them: /);
+    assert.deepEqual(namesAfterColon(skills.details[0]), ["delta", "epsilon", "gamma", "zeta"]);
+    assert.equal(r.total, 0);
+  } finally { box.cleanup(); }
+});
+
+test("audit: skills that are loaded and cost too much get a fix that names the user-only switch", () => {
+  const box = sandbox();
+  try {
+    box.write("skills/big/SKILL.md", skill("big", "G".repeat(5000)));
+    box.write("skills/manual/SKILL.md", userOnly("manual", "M".repeat(5000)));
+    const r = audit({ project: box.root, cfg: box.cfg, home: box.home, env: { CLAUDE_CONFIG_DIR: box.cfg } });
+    const skills = r.checks.find((c) => c.title === "Skills");
+    const big = estimate("big", "G".repeat(5000));
+    assert.equal(r.skillTokens, big);
+    assert.equal(skills.level, "warn");
+    assert.equal(skills.saves, big - BUDGET.skillsOk, "the saving is measured on the skill that is loaded, not on the user-only one");
+    assert.match(skills.summary, /^1 skill, descriptions 5,000 chars/);
+    assert.equal(skills.details.length, 1);
+    assert.match(skills.details[0], /^1 user-only skill, 0 tokens until you run it: manual$/);
+    assert.match(skills.fix, /disable-model-invocation: true/);
+    assert.doesNotMatch(skills.fix, /Every skill/, "user-only skills are not sent each session");
+  } finally { box.cleanup(); }
+});
+
+test("doctor: Glow's own skills are all user-only, so the report counts none of them", () => {
+  const box = sandbox();
+  try {
+    // The three /glow: skills, as a user would find them in ~/.claude/skills.
+    const shipped = fs.readdirSync(path.join(ROOT, "skills")).sort();
+    assert.ok(shipped.length >= 3);
+    for (const name of shipped) box.write(`skills/${name}/SKILL.md`, fs.readFileSync(path.join(ROOT, "skills", name, "SKILL.md"), "utf8"));
+    const proj = path.join(box.root, "proj");
+    fs.mkdirSync(proj);
+    const r = run(box, ["doctor", "--project", proj]);
+    assert.equal(r.status, 0, r.out);
+    assert.match(r.stdout, /✔ Skills\s+0 skills loaded every session, 0 tokens/);
+    const line = r.stdout.split("\n").find((l) => /user-only skills?, 0 tokens until you run/.test(l));
+    assert.ok(line, `a user-only line in:\n${r.stdout}`);
+    assert.match(line, new RegExp(`^\\s+${shipped.length} user-only skills, 0 tokens until you run them: `));
+    assert.deepEqual(namesAfterColon(line), shipped);
+    assert.doesNotMatch(r.stdout, /about [\d,]+ tokens loaded every session/, "no skill description is billed");
   } finally { box.cleanup(); }
 });
 

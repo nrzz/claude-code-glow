@@ -294,7 +294,7 @@ test("the installed bin/claude-glow.mjs is a stable command: every subcommand wo
 
     const version = glow("--version");
     assert.equal(version.status, 0, version.out);
-    assert.equal(version.stdout.trim(), "1.0.0", "package.json is copied too, so --version works");
+    assert.equal(version.stdout.trim(), "1.0.1", "package.json is copied too, so --version works");
     assert.match(glow("--help").stdout, /Usage: claude-glow <command>/);
 
     const list = glow("theme", "list");
@@ -369,6 +369,23 @@ test("uninstall restores the previous status line and removes only what we added
     assert.match(r.out, /kept 2 file\(s\) named glow\*\.json that are not Glow themes/);
     assert.match(r.out, /previous status line restored/);
     assert.deepEqual(ls(box.home), [], "HOME untouched");
+  } finally { box.cleanup(); }
+});
+
+test("uninstall, like install, backs settings.json up and re-saves it with 2 spaces, and leaves the now empty themes folder (the README says so)", () => {
+  const box = sandbox();
+  try {
+    box.write("settings.json", JSON.stringify(ORIGINAL, null, 4) + "\n");
+    assert.equal(run(box, ["install", "--theme", "dracula"]).status, 0);
+    assert.equal(backups(box).length, 1, "install saved a copy");
+    assert.equal(fs.readFileSync(box.path(backups(box)[0]), "utf8"), JSON.stringify(ORIGINAL, null, 4) + "\n", "of the 4-space file it found");
+
+    const r = run(box, ["uninstall"]);
+    assert.equal(r.status, 0, r.out);
+    assert.equal(backups(box).length, 2, "uninstall saved a copy too");
+    assert.equal(fs.readFileSync(box.path("settings.json"), "utf8"), JSON.stringify(ORIGINAL, null, 2) + "\n", "the same settings, reflowed to 2 spaces");
+    assert.ok(ls(box.cfg).includes("themes"), "the themes folder is still there");
+    assert.deepEqual(ls(box.path("themes")), [], "with nothing in it");
   } finally { box.cleanup(); }
 });
 

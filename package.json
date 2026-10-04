@@ -1,6 +1,6 @@
 {
   "name": "claude-code-glow",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Color themes for the whole Claude Code interface, a themed status line and a live HUD, with zero-token tips that help you spend fewer tokens",
   "type": "module",
   "bin": {

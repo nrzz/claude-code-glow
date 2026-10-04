@@ -52,7 +52,7 @@ test("--version prints the package version", () => {
       assert.equal(r.status, 0);
       assert.equal(r.stdout.trim(), pkg.version);
     }
-    assert.equal(pkg.version, "1.0.0");
+    assert.equal(pkg.version, "1.0.1");
   } finally { box.cleanup(); }
 });
 
