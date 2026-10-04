@@ -104,7 +104,9 @@ test('below half the context the tip is a feature tip and there is no Compact bu
   expect(await ui.find({ key: 'compact' })).toBeUndefined()
   const tip = await ui.find({ text: /^💡 / })
   expect(tip).toBeDefined()
-  expect(tip?.text).not.toMatch(/Context|limit/)
+  // Not one of the warnings. (The feature tips rotate every two minutes, and one of them names plan
+  // limits, so the check is for the warnings' own words.)
+  expect(tip?.text).not.toMatch(/Context nearly full|Past half the context|5-hour limit|Weekly limit/)
   await ui.unmount()
 })
 
